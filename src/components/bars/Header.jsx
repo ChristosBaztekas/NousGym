@@ -1,5 +1,6 @@
 import { NavLink } from "react-router"
 import NousLogo from "../../assets/Logo.png"
+import * as Icons from "../../utils/icons.util"
 
 export const Header = () => {
     return (
@@ -17,6 +18,7 @@ export const Header = () => {
 
                 <span>
                     <button>Βρες το Ψυχολόγο σου</button>
+                    <Icons.ArrowIcon />
                 </span>
             </div>
         </header>

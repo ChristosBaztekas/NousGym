@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     /* 
     font-family: "Manrope", serif;
     font-family: "Castoro", serif;
@@ -14,7 +14,7 @@ html {
 }
 
 header {
-    @apply flex items-center justify-between mx-auto bg-transparent text-white;
+    @apply relative flex items-center justify-between mx-auto bg-transparent text-white z-50;
     width: 80%;
     font: 700 14px "Manrope", serif;
 }
@@ -28,19 +28,22 @@ header>div>nav {
 }
 
 header>div>nav .active {
-    @apply bg-amber-600;
+    @apply text-[#FF9245];
 }
 
 header>div>span {
-    @apply flex;
+    @apply flex justify-center items-center gap-2 bg-[#FF9245] hover:bg-[#ff9345cc] rounded-full w-[210.55px] h-[43px] transition-all cursor-pointer;
+}
+
+header button {
+    @apply font-medium cursor-pointer;
 }
 
 #hero {
-    @apply relative;
+    @apply relative z-0;
     width: 100%;
     height: 720px;
     background-image: url(../assets/images/forHome/hero.png);
     background-size: cover;
     background-position: center;
-    z-index: -1;
 }
