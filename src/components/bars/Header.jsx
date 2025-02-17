@@ -1,14 +1,16 @@
-import { NavLink } from "react-router"
-import NousLogo from "../../assets/Logo.png"
-import * as Icons from "../../utils/icons.util"
+import { NavLink } from "react-router"; // Import NavLink from react-router for navigation
+import NousLogo from "../../assets/Logo.png"; // Import the logo image
+import * as Icons from "../../utils/icons.util"; // Import all icons from the icons.util file
 
 export const Header = () => {
     return (
         <header>
+            {/* Logo of the application */}
             <img src={NousLogo} alt="NousGym Logo" width={86} height={86} />
 
             <div>
                 <nav>
+                    {/* Navigation links */}
                     <NavLink to="./">Αρχική</NavLink>
                     <NavLink to="./ss">Ποιοι Είμαστε</NavLink>
                     <NavLink to="./ss">NousGym+</NavLink>
@@ -16,11 +18,12 @@ export const Header = () => {
                     <NavLink to="./ss">Επικοινωνία</NavLink>
                 </nav>
 
+                {/* Button with icon */}
                 <span>
                     <button>Βρες το Ψυχολόγο σου</button>
                     <Icons.ArrowIcon />
                 </span>
             </div>
         </header>
-    )
-}
+    );
+};

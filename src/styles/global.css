@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 @import "tailwindcss";
 
 * {
@@ -10,13 +11,14 @@
 }
 
 html {
-    font-family: "Plus Jakarta Sans", serif;
+    font-family: "Manrope", serif;
 }
 
+/* Header Style */
+
 header {
-    @apply relative flex items-center justify-between mx-auto bg-transparent text-white z-50;
+    @apply relative flex items-center justify-between mx-auto bg-transparent text-sm text-white z-50;
     width: 80%;
-    font: 700 14px "Manrope", serif;
 }
 
 header>div {
@@ -24,7 +26,7 @@ header>div {
 }
 
 header>div>nav {
-    @apply flex gap-6;
+    @apply flex gap-6 font-bold;
 }
 
 header>div>nav .active {
@@ -32,18 +34,50 @@ header>div>nav .active {
 }
 
 header>div>span {
-    @apply flex justify-center items-center gap-2 bg-[#FF9245] hover:bg-[#ff9345cc] rounded-full w-[210.55px] h-[43px] transition-all cursor-pointer;
+    @apply flex justify-center items-center gap-2 bg-[#FF9245] hover:bg-[#ff9345cc] rounded-full px-4 py-3 transition-all cursor-pointer;
 }
 
 header button {
     @apply font-medium cursor-pointer;
 }
 
+/*! HomePage !*/
+
+/* HeroSection */
 #hero {
-    @apply relative z-0;
-    width: 100%;
-    height: 720px;
+    @apply relative text-white w-full h-dvh z-0 overflow-hidden;
     background-image: url(../assets/images/forHome/hero.png);
     background-size: cover;
     background-position: center;
+}
+
+#hero section {
+    @apply relative flex flex-col my-28 mx-48 max-w-[900px] z-50;
+}
+
+#hero section>h1 {
+    @apply text-[#ff9245] text-left text-[80px] font-bold leading-[89.25px];
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#hero section>h1>span:nth-child(2) {
+    @apply text-[#67c8df];
+}
+
+#hero section>h2 {
+    @apply text-6xl mt-5 leading-[70px];
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#hero section>h3 {
+    @apply text-3xl mt-3.5 max-w-[735px] mr-auto leading-10;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#hero>section>span {
+    @apply flex items-center justify-between mr-auto bg-[#469BAF] hover:bg-[#469cafc7] rounded-full w-full max-w-72 px-4 py-3 my-8 transition-all cursor-pointer;
+}
+
+#hero button {
+    @apply text-sm font-medium cursor-pointer;
 }
