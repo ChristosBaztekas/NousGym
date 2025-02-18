@@ -81,3 +81,25 @@ header button {
 #hero button {
     @apply text-sm font-medium cursor-pointer;
 }
+
+/* About Section */
+
+#about {
+    @apply flex justify-center items-start gap-16 m-20 text-[#2B2C2E]
+}
+
+#about h2 {
+    @apply text-5xl
+}
+
+#about>div {
+    @apply flex flex-col gap-8 max-w-[572px]
+}
+
+#about ul {
+    @apply flex flex-wrap gap-5 justify-between font-bold
+}
+
+#about li {
+    @apply flex gap-2 px-1
+}
