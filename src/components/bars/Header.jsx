@@ -1,6 +1,6 @@
-import { NavLink } from "react-router"; // Import NavLink from react-router for navigation
+import { NavLink } from "react-router";
 import NousLogo from "../../assets/Logo.png"; // Import the logo image
-import * as Icons from "../../utils/icons.util"; // Import all icons from the icons.util file
+import * as Icons from "../../utils/icons.util"; // Import all icons
 
 export const Header = () => {
     return (

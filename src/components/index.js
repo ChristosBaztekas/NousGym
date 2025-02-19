@@ -5,3 +5,8 @@ export * from "./forHome/HeroSection.jsx"
 export * from "./forHome/AboutSection.jsx"
 export * from "./forHome/ProcessSection.jsx"
 export * from "./forHome/ToolkitSection.jsx"
+export * from "./forHome/WhySection.jsx"
+
+
+// Custom Components
+export * from "./custom/CheckBox.jsx"

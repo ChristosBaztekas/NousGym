@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 * {
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
     /* 
     font-family: "Manrope", serif;
     font-family: "Castoro", serif;
@@ -179,19 +179,42 @@ header button {
     font-size: 56px;
 }
 
+#toolkit>section>form {
+    @apply flex justify-between gap-5 my-6;
+}
+
+#toolkit>section>form>div {
+    @apply flex w-full h-[52px] rounded-full bg-[#F1F1F1];
+}
+
+#toolkit>section>form input {
+    @apply w-full max-w-[200px] h-[52px] px-4 rounded-full bg-[#F1F1F1] outline-none;
+}
+
+#toolkit>section>form button {
+    @apply bg-[#469BAF] hover:bg-[#469cafc9] w-[120px] h-full rounded-full px-3 text-sm shrink-0 text-white outline-none cursor-pointer transition-all;
+}
 
 
+/* Why Section */
+#why {
+    @apply relative text-white bg-[#469BAF] flex justify-center items-center gap-6 py-20 text-center
+}
+
+#why>h3 {
+    @apply text-3xl font-bold
+}
+
+#why>span {
+    @apply flex items-center text-[#2B2C2E] justify-between bg-white hover:bg-white/70 rounded-full w-full max-w-52 px-4 py-3 transition-all cursor-pointer;
+}
+
+#why button {
+    @apply text-sm font-medium cursor-pointer;
+}
 
 
-
-
-
-
-
-
-
-
-
+/* Custom Checkbox */
 
 .checkbox-wrapper-12 {
     position: relative;

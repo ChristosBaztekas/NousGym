@@ -1,5 +1,5 @@
 import NousLogo from "../../assets/Logo.png"; // Import the logo image
-import * as Icons from "../../utils/icons.util"; // Import all icons from the icons.util file
+import * as Icons from "../../utils/icons.util"; // Import all icons
 
 export const AboutSection = () => {
     return (
