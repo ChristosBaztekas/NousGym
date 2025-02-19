@@ -13,7 +13,7 @@ export const ProcessSection = () => {
             {/* Main heading */}
             <p>
                 Ποια είναι η διαδικασία;
-                <Icons.WhitePatternIcon />
+                <Icons.PraPatternIcon />
             </p>
             <h2>Στάδια Επιλογής για το Ψυχολόγο σου</h2>
 
