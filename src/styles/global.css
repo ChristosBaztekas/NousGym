@@ -214,6 +214,38 @@ header button {
 }
 
 
+/* Online Section */
+
+#online {
+    @apply flex justify-center items-center gap-16 m-20 text-[#2B2C2E]
+}
+
+#online h2 {
+    @apply text-5xl
+}
+
+#online>div {
+    @apply flex flex-col gap-6 max-w-[572px]
+}
+
+#online ul {
+    @apply flex flex-col gap-3 justify-between font-bold
+}
+
+#online li {
+    @apply flex gap-2 px-1
+}
+
+#online span {
+    @apply flex items-center text-white justify-between bg-[#FF9245] hover:bg-[#ff9345cc] rounded-full w-full max-w-52 px-4 py-3 transition-all cursor-pointer;
+}
+
+#online button {
+    @apply text-sm font-medium cursor-pointer;
+}
+
+
+
 /* Custom Checkbox */
 
 .checkbox-wrapper-12 {
