@@ -1,3 +1,5 @@
+import "../../styles/custom.css"
+
 export const CheckBox = ({ children }) => {
 	return (
 		<div className="flex gap-2 items-center text-xs text-[#00000096] px-2">
