@@ -10,6 +10,18 @@
 
 }
 
+/* Hide scrollbar for all elements */
+*::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
 html {
     font-family: "Manrope", serif;
 }
@@ -243,6 +255,23 @@ header button {
 #online button {
     @apply text-sm font-medium cursor-pointer;
 }
+
+
+/* Appointments Section */
+
+#appointment {
+    @apply relative flex justify-center items-center text-center;
+    background-image: url(../assets/images/forHome/appointment.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#appointment iframe {
+    @apply h-[790px] my-20 max-w-[1100px];
+}
+
+
+
 
 
 
