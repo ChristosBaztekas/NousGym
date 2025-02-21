@@ -1,5 +1,5 @@
 // All the components of the Home page
-import { HeroSection, AboutSection, ProcessSection, ToolkitSection, WhySection, OnlineSection, AppointmentSection } from "../components";
+import { HeroSection, AboutSection, ProcessSection, ToolkitSection, WhySection, OnlineSection, AppointmentSection, CoverSection } from "../components";
 
 export const HomePage = () => {
     return (
@@ -11,6 +11,7 @@ export const HomePage = () => {
             <WhySection />
             <OnlineSection />
             <AppointmentSection />
+            <CoverSection />
         </>
     );
 };

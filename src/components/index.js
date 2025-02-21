@@ -8,6 +8,7 @@ export * from "./forHome/ToolkitSection.jsx"
 export * from "./forHome/WhySection.jsx"
 export * from "./forHome/OnlineSection.jsx"
 export * from "./forHome/AppointmentSection.jsx"
+export * from "./forHome/CoverSection.jsx"
 
 
 // Custom Components
