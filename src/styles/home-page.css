@@ -214,7 +214,7 @@
 }
 
 #appointment iframe {
-    @apply h-[790px] my-20 max-w-[1100px];
+    @apply h-[790px] my-20 max-w-[1300px];
 }
 
 
@@ -248,4 +248,27 @@
 
 #cover li>svg {
     @apply text-[#479BAF] w-5 shrink-0
+}
+
+
+/* Courses Section */
+
+#courses {
+    @apply relative flex justify-center items-center py-20 gap-16 bg-[#F1F1F1] text-[#2B2C2E]
+}
+
+#courses h2 {
+    @apply text-5xl
+}
+
+#courses>div {
+    @apply flex flex-col gap-8 max-w-[570px]
+}
+
+#courses span {
+    @apply flex items-center text-white justify-between bg-[#469BAF] hover:bg-[#469cafc7] rounded-full w-full max-w-52 px-4 py-3 transition-all cursor-pointer;
+}
+
+#courses button {
+    @apply text-sm font-medium cursor-pointer;
 }
