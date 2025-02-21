@@ -56,3 +56,17 @@ header>div>span {
 header button {
     @apply font-medium cursor-pointer;
 }
+
+/* Footer Style */
+
+footer {
+    @apply flex justify-center items-center gap-3 text-white bg-[#469BAF] font-medium p-3;
+}
+
+footer a {
+    @apply underline;
+}
+
+footer a:hover {
+    @apply text-[#FF9245] transition-all;
+}
