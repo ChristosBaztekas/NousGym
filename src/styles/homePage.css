@@ -315,3 +315,14 @@
 #faq article>p {
     @apply py-3 text-base text-[#2B2C2E]/85 text-justify transition-all duration-500 ease-in-out overflow-hidden
 }
+
+
+/* Widget Form Section */
+
+#widget {
+    @apply flex justify-center items-center
+}
+
+#widget iframe {
+    @apply h-[790px] my-20 max-w-[1300px];
+}

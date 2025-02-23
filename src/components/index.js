@@ -12,6 +12,7 @@ export * from "./forHome/AppointmentSection.jsx"
 export * from "./forHome/CoverSection.jsx"
 export * from "./forHome/CoursesSection.jsx"
 export * from "./forHome/QuestionSection.jsx"
+export * from "./forHome/WidgetSection.jsx"
 
 // Custom Components
 export * from "./custom/CheckBox.jsx"
