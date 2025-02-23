@@ -1,6 +1,6 @@
 // All the components of the Home page
-import { HeroSection, AboutSection, ProcessSection, ToolkitSection, WhySection, OnlineSection, AppointmentSection, CoverSection, CoursesSection, Footer } from "../components";
-import "../styles/home-page.css"
+import { HeroSection, AboutSection, ProcessSection, ToolkitSection, WhySection, OnlineSection, AppointmentSection, CoverSection, CoursesSection, Footer, QuestionSection } from "../components";
+import "../styles/homePage.css"
 
 export const HomePage = () => {
     return (
@@ -14,6 +14,7 @@ export const HomePage = () => {
             <AppointmentSection />
             <CoverSection />
             <CoursesSection />
+            <QuestionSection />
             <Footer />
         </>
     );

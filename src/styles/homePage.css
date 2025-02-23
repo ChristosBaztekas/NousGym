@@ -272,3 +272,46 @@
 #courses button {
     @apply text-sm font-medium cursor-pointer;
 }
+
+
+/* Questions Section */
+
+#faq {
+    @apply flex justify-center items-start py-20 gap-16 text-[#2B2C2E]
+}
+
+#faq>section:nth-child(1)>h2 {
+    @apply text-5xl
+}
+
+#faq>section:nth-child(1)>span {
+    @apply flex items-center text-white justify-between bg-[#FF9245] hover:bg-[#ff9345cc] rounded-full w-full max-w-60 px-4 py-3 mt-8 transition-all cursor-pointer;
+}
+
+#faq button {
+    @apply text-sm font-medium cursor-pointer;
+}
+
+#faq article {
+    @apply mb-4 border-b-2 border-[#EAE9E8] w-full max-w-[665px] cursor-pointer;
+}
+
+#faq article>div {
+    @apply w-full flex justify-between gap-3 items-start cursor-pointer transition-colors duration-300 font-semibold;
+}
+
+#faq article>div>span:nth-child(1) {
+    @apply text-lg text-justify transition-opacity duration-300
+}
+
+#faq article>div>span:nth-child(2) {
+    @apply text-[#469BAF] text-2xl font-semibold
+}
+
+#faq article>div>span:nth-child(2):hover {
+    @apply text-[#469cafc7]
+}
+
+#faq article>p {
+    @apply py-3 text-base text-[#2B2C2E]/85 text-justify transition-all duration-500 ease-in-out overflow-hidden
+}
