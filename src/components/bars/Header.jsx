@@ -19,10 +19,12 @@ export const Header = () => {
                 </nav>
 
                 {/* Button with icon */}
-                <span>
-                    <button>Βρες το Ψυχολόγο σου</button>
-                    <Icons.ArrowIcon />
-                </span>
+                <button className="group">
+                    Βρες το Ψυχολόγο σου
+                    <span>
+                        <Icons.ArrowIcon />
+                    </span>
+                </button>
             </div>
         </header>
     );

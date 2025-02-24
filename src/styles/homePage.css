@@ -32,15 +32,6 @@
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-#hero>section>span {
-    @apply flex items-center justify-between mr-auto bg-[#469BAF] hover:bg-[#469cafc7] rounded-full w-full max-w-72 px-4 py-3 my-8 transition-all cursor-pointer;
-}
-
-#hero button {
-    @apply text-sm font-medium cursor-pointer;
-}
-
-
 /* About Section */
 
 #about {
@@ -99,15 +90,7 @@
 
 #process>div>div {
     /* Line Divider */
-    @apply w-full h-[1.218px] bg-[#2B2C2E] mx-7 mt-16 max-w-32
-}
-
-#process>span {
-    @apply flex items-center text-white justify-between bg-[#FF9245] hover:bg-[#ff9345cc] rounded-full w-full max-w-52 mx-auto px-4 py-3 mt-8 transition-all cursor-pointer;
-}
-
-#process button {
-    @apply text-sm font-medium cursor-pointer;
+    @apply w-full h-[1.218px] bg-[#2B2C2E] mx-7 mt-16 max-w-32;
 }
 
 
@@ -160,14 +143,6 @@
     @apply text-3xl font-bold
 }
 
-#why>span {
-    @apply flex items-center text-[#2B2C2E] justify-between bg-white hover:bg-white/70 rounded-full w-full max-w-52 px-4 py-3 transition-all cursor-pointer;
-}
-
-#why button {
-    @apply text-sm font-medium cursor-pointer;
-}
-
 
 /* Online Section */
 
@@ -193,14 +168,6 @@
 
 #online li>svg {
     @apply text-[#FF9245]
-}
-
-#online span {
-    @apply flex items-center text-white justify-between bg-[#FF9245] hover:bg-[#ff9345cc] rounded-full w-full max-w-52 px-4 py-3 transition-all cursor-pointer;
-}
-
-#online button {
-    @apply text-sm font-medium cursor-pointer;
 }
 
 
@@ -263,14 +230,6 @@
 
 #courses>div {
     @apply flex flex-col gap-8 max-w-[570px]
-}
-
-#courses span {
-    @apply flex items-center text-white justify-between bg-[#469BAF] hover:bg-[#469cafc7] rounded-full w-full max-w-52 px-4 py-3 transition-all cursor-pointer;
-}
-
-#courses button {
-    @apply text-sm font-medium cursor-pointer;
 }
 
 
@@ -337,7 +296,7 @@
 }
 
 #testimonial>section {
-    @apply relative max-w-[768px] mx-auto
+    @apply relative max-w-[768px] mx-auto mt-10
 }
 
 #testimonial>section>p {
@@ -357,9 +316,9 @@
 }
 
 #testimonial .prev-btn {
-    @apply absolute -left-36 top-1/4 mt-10 transition-all cursor-pointer text-[#2B2C2E] hover:text-[#FF9245] outline-none;
+    @apply absolute -left-36 top-1/4 mt-10 transition-all cursor-pointer text-[#2B2C2E] hover:text-[#FF9245] outline-none rotate-180;
 }
 
 #testimonial .next-btn {
-    @apply absolute -right-36 top-1/4 mt-10 transition-all cursor-pointer text-[#2B2C2E] hover:text-[#FF9245] outline-none rotate-180;
+    @apply absolute -right-36 top-1/4 mt-10 transition-all cursor-pointer text-[#2B2C2E] hover:text-[#FF9245] outline-none;
 }

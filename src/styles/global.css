@@ -26,6 +26,45 @@ html {
     font-family: "Manrope", serif;
 }
 
+/* Sections Patterns Effects */
+
+.topPattern {
+    @apply absolute left-0 right-0 top-0 z-10 w-full
+}
+
+.bottomPattern {
+    @apply absolute left-0 right-0 bottom-0 z-10 w-full
+}
+
+/* All Buttons Default Style */
+
+#hero button,
+#process button,
+#why button,
+#online button,
+#courses button,
+#faq button {
+    @apply relative flex justify-between w-full max-w-[240px] items-center gap-6 font-medium rounded-full px-5 py-3 transition-all cursor-pointer;
+}
+
+#hero button>span,
+#process button>span,
+#why button>span,
+#online button>span,
+#courses button>span,
+#faq button>span {
+    @apply relative w-[17.5px] h-[17.5px] border-2 rounded-full;
+}
+
+#hero button svg,
+#process button svg,
+#why button svg,
+#online button svg,
+#courses button svg,
+#faq button svg {
+    @apply absolute -left-[11px] group-hover:left-1 top-[2px] shrink-0 transition-all duration-200;
+}
+
 /* Header Style */
 
 header {
@@ -38,7 +77,7 @@ header>div {
 }
 
 header>div>nav {
-    @apply flex gap-6 font-bold;
+    @apply flex gap-6 font-bold text-nowrap;
 }
 
 header nav>a:hover:not(.active) {
@@ -49,12 +88,16 @@ header>div>nav .active {
     @apply text-[#FF9245];
 }
 
-header>div>span {
-    @apply flex justify-center items-center gap-2 bg-[#FF9245] hover:bg-[#ff9345cc] rounded-full px-4 py-3 transition-all cursor-pointer;
+header button {
+    @apply relative flex justify-center items-center gap-6 font-medium bg-[#FF9245] hover:bg-[#469BAF] rounded-full px-5 py-3 transition-all cursor-pointer;
 }
 
-header button {
-    @apply font-medium cursor-pointer;
+header button>span {
+    @apply relative w-[17.5px] h-[17.5px] border-2 rounded-full;
+}
+
+header button svg {
+    @apply absolute -left-[11px] group-hover:left-1 top-[2px] shrink-0 transition-all duration-200;
 }
 
 /* Footer Style */
@@ -69,15 +112,4 @@ footer a {
 
 footer a:hover {
     @apply text-[#FF9245] transition-all;
-}
-
-
-/* Sections Pattern Effects */
-
-.topPattern {
-    @apply absolute left-0 right-0 top-0 z-10 w-full
-}
-
-.bottomPattern {
-    @apply absolute left-0 right-0 bottom-0 z-10 w-full
 }

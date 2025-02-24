@@ -41,10 +41,12 @@ export const OnlineSection = () => {
 				</ul>
 
 				{/* Button with icon */}
-				<span>
-					<button>Περισσότερα</button>
-					<Icons.ArrowIcon />
-				</span>
+				<button className="group bg-[#FF9245] hover:bg-[#469BAF] text-white">
+					Περισσότερα
+					<span>
+						<Icons.ArrowIcon />
+					</span>
+				</button>
 			</div>
 
 			{/* Logo image */}

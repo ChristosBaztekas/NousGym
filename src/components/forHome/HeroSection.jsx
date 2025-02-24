@@ -30,10 +30,12 @@ export const HeroSection = () => {
                 <h3>Βρες τον ψυχολόγο που ταιριάζει στις ανάγκες σου και ξεκίνησε το ταξίδι σου προς την ψυχική ευεξία!</h3>
 
                 {/* Button with icon */}
-                <span>
-                    <button>Ποιοι είμαστε;</button>
-                    <Icons.ArrowIcon />
-                </span>
+                <button className="group bg-[#469BAF] hover:bg-[#FF9245] mt-5">
+                    Ποιοι είμαστε;
+                    <span>
+                        <Icons.ArrowIcon />
+                    </span>
+                </button>
             </section>
         </main>
     )

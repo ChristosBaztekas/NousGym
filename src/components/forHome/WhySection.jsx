@@ -13,10 +13,12 @@ export const WhySection = () => {
 			<h3>Γιατί να επιλέξετε τους ψυχολόγους μας;</h3>
 
 			{/* Button with icon */}
-			<span>
-				<button>Ποιοι είμαστε</button>
-				<Icons.ArrowIcon />
-			</span>
+			<button className="group bg-white hover:bg-gray-300 text-[#2B2C2E]">
+				Ποιοι είμαστε
+				<span>
+					<Icons.ArrowIcon />
+				</span>
+			</button>
 		</main>
 	)
 }
