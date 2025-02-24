@@ -324,5 +324,42 @@
 }
 
 #widget iframe {
-    @apply h-[790px] my-20 max-w-[1300px];
+    @apply h-[790px] my-20;
+}
+
+
+
+
+/* Testimonial Section */
+
+#testimonial {
+    @apply relative py-20 gap-16 bg-[#F1F1F1] text-[#2B2C2E]
+}
+
+#testimonial>section {
+    @apply relative max-w-[768px] mx-auto
+}
+
+#testimonial>section>p {
+    @apply text-[#FF9245] mb-5
+}
+
+#testimonial h2 {
+    @apply text-5xl
+}
+
+#testimonial svg {
+    @apply my-8
+}
+
+#testimonial div {
+    @apply text-2xl
+}
+
+#testimonial .prev-btn {
+    @apply absolute -left-36 top-1/4 mt-10 transition-all cursor-pointer text-[#2B2C2E] hover:text-[#FF9245] outline-none;
+}
+
+#testimonial .next-btn {
+    @apply absolute -right-36 top-1/4 mt-10 transition-all cursor-pointer text-[#2B2C2E] hover:text-[#FF9245] outline-none rotate-180;
 }

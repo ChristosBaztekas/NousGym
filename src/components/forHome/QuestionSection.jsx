@@ -46,7 +46,7 @@ export const QuestionSection = () => {
                             <span>{item.question}</span>
                             <span>{activeQuestion === index ? '–' : '+'}</span>
                         </div>
-                        <p className={` ${activeQuestion === index ? 'max-h-72 opacity-100' : 'max-h-0 opacity-0'}`}>
+                        <p className={`${activeQuestion === index ? 'max-h-72 opacity-100' : 'max-h-0 opacity-0'}`}>
                             {item.answer}
                         </p>
                     </article>
