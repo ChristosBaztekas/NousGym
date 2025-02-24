@@ -8,8 +8,8 @@ export const CoursesSection = () => {
     return (
         <main id="courses">
             {/* Overlay Patterns for the process section */}
-            <img src={TopPattern} alt="Pattern" className="absolute left-0 right-0 top-0 z-10 w-full" />
-            <img src={BottomPattern} alt="Pattern" className="absolute left-0 right-0 bottom-0 z-10 w-full" />
+            <img src={TopPattern} alt="Pattern" className="topPattern" />
+            <img src={BottomPattern} alt="Pattern" className="bottomPattern" />
 
             {/* Logo image */}
             <img src={NousCourse} alt="NousGym Logo" width={435} height={483} />
