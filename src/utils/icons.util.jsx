@@ -10,6 +10,18 @@ export const ArrowIcon = () => (
         </defs>
     </svg>
 );
+export const CloseArrowIcon = () => (
+    <svg width="31" height="20" viewBox="0 0 21 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clipPath="url(#clip0_43_1469)">
+            <path d="M16.6044 0.679522L15.7665 1.51634L18.2421 3.98875H1.08057V5.16029H18.2345L15.7589 7.63271L16.5892 8.46191L20.4892 4.56691L16.6044 0.679522Z" fill="currentColor" />
+        </g>
+        <defs>
+            <clipPath id="clip0_43_1469">
+                <rect width="19.91" height="8.79" fill="currentColor" transform="matrix(1 0 0 -1 0.830078 8.46973)" />
+            </clipPath>
+        </defs>
+    </svg>
+);
 
 export const CheckIcon = () => (
     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
@@ -105,5 +117,11 @@ export const TestimonialArrowIcon = () => (
                 <rect width="49.12" height="44" fill="white" transform="matrix(1 0 0 -1 0.879883 44)" />
             </clipPath>
         </defs>
+    </svg>
+);
+
+export const BurgerIcon = () => (
+    <svg width="27" height="21" viewBox="0 0 27 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 2H25M2 10.5H25M2 19H25" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
 );

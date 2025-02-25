@@ -10,7 +10,7 @@
 }
 
 #hero section {
-    @apply relative flex flex-col my-28 mx-48 max-w-[900px] z-50;
+    @apply relative flex flex-col my-28 mx-48 max-w-[900px] z-40;
 }
 
 #hero section>h1 {

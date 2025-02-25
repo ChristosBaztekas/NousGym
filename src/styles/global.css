@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 @import "tailwindcss";
 
+@theme {
+    --breakpoint-xs: 30rem;
+    --breakpoint-lg: 1100px;
+    --breakpoint-3xl: 120rem;
+}
+
 * {
     /* outline: 1px solid red; */
     /* 
@@ -68,23 +74,26 @@ html {
 /* Header Style */
 
 header {
-    @apply relative flex items-center justify-between mx-auto bg-transparent text-sm text-white z-50;
-    width: 80%;
+    @apply relative flex items-center justify-between mx-auto bg-transparent text-sm text-white w-[90%] lg:w-[80%] z-50;
+}
+
+header>img {
+    @apply hidden lg:block;
 }
 
 header>div {
-    @apply flex items-center gap-8;
+    @apply flex items-center gap-8 mt-5 lg:mt-0;
 }
 
-header>div>nav {
-    @apply flex gap-6 font-bold text-nowrap;
+header>div>nav:nth-child(1) {
+    @apply hidden lg:flex gap-6 font-bold text-nowrap;
 }
 
-header nav>a:hover:not(.active) {
+header nav:nth-child(1)>a:hover:not(.active) {
     @apply text-[#ffc79e] transition-all;
 }
 
-header>div>nav .active {
+header>div>nav:nth-child(1) .active {
     @apply text-[#FF9245];
 }
 
@@ -98,6 +107,36 @@ header button>span {
 
 header button svg {
     @apply absolute -left-[11px] group-hover:left-1 top-[2px] shrink-0 transition-all duration-200;
+}
+
+/* Header for mobile screens */
+.sidebar {
+    @apply fixed top-0 left-[-100%] w-[300px] h-full bg-white flex flex-col items-center pt-8 transition-all duration-300 shadow-lg;
+}
+
+.sidebar img {
+    @apply w-[60%];
+}
+
+.sidebar.open {
+    @apply left-0;
+}
+
+.sidebar a {
+    @apply block w-full text-center py-4 font-semibold text-[#333] text-lg transition-all;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    @apply bg-[#FF9245] text-white;
+}
+
+.close-btn {
+    @apply absolute top-5 right-5 hover:right-7 text-black hover:text-[#FF9245] cursor-pointer rotate-180 transition-all;
+}
+
+.burger-menu {
+    @apply lg:hidden mr-auto cursor-pointer text-white hover:text-[#FF9245] transition-all;
 }
 
 /* Footer Style */
