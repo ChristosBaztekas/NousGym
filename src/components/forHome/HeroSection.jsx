@@ -1,7 +1,7 @@
 import { Header } from "../"; // Import the Header component
 import * as Icons from "../../utils/icons.util"; // Import all icons 
 // Import images
-import HeroPattern from "../../assets/images/patterns/PatternB.png";
+import HeroPattern from "../../assets/images/patterns/patternB.png";
 import TextPattern from "../../assets/images/patterns/textPattern.png";
 
 export const HeroSection = () => {

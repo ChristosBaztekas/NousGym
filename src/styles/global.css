@@ -119,7 +119,7 @@ header .group svg {
 }
 
 .sidebar.open {
-    @apply left-0;
+    @apply left-0
 }
 
 .sidebar a {
@@ -137,6 +137,10 @@ header .group svg {
 
 .burger-menu {
     @apply lg:hidden mr-auto cursor-pointer text-white hover:text-[#FF9245] transition-all;
+}
+
+.scrolled {
+    @apply fixed top-0 right-0 left-0 w-full bg-black/20 backdrop-blur-sm max-lg:pb-5 px-5 sm:px-10 lg:px-20 z-50 shadow transition-all duration-300;
 }
 
 /* Footer Style */
