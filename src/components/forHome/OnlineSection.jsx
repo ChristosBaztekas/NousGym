@@ -1,4 +1,4 @@
-import NousOnline from "../../assets/images/forHome/nousOnline.png"; // Import the logo image
+import NousOnline from "../../assets/images/forHome/nousOnline.webp"; // Import the logo image
 import * as Icons from "../../utils/icons.util"; // Import all icons
 
 export const OnlineSection = () => {

@@ -9,7 +9,7 @@
 
 #hero {
     @apply relative text-white w-full sm:h-dvh overflow-hidden;
-    background-image: url(../assets/images/forHome/hero.png);
+    background-image: url(../assets/images/forHome/hero.webp);
     background-size: cover;
     background-position: center;
 }
@@ -203,7 +203,7 @@
 
 #appointment {
     @apply relative flex justify-center items-center text-center;
-    background-image: url(../assets/images/forHome/appointment.png);
+    background-image: url(../assets/images/forHome/appointment.webp);
     background-position: center;
     background-size: cover;
 }
@@ -333,11 +333,11 @@
 }
 
 #testimonial .prev-btn {
-    @apply md:absolute md:-left-20 lg:-left-36 top-1/4 max-md:w-5 md:mt-10 transition-all cursor-pointer text-[#2B2C2E] hover:text-[#FF9245] outline-none rotate-180;
+    @apply md:absolute -left-20 lg:-left-36 top-1/4 max-md:w-5 md:mt-10 transition-all cursor-pointer text-[#2B2C2E] hover:text-[#FF9245] outline-none rotate-180;
 }
 
 #testimonial .next-btn {
-    @apply md:absolute md:-right-20 lg:-right-36 max-md:w-5 top-1/4 md:mt-10 transition-all cursor-pointer text-[#2B2C2E] hover:text-[#FF9245] outline-none;
+    @apply md:absolute -right-20 lg:-right-36 max-md:w-5 top-1/4 md:mt-10 transition-all cursor-pointer text-[#2B2C2E] hover:text-[#FF9245] outline-none;
 }
 
 
