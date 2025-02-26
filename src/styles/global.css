@@ -97,15 +97,15 @@ header>div>nav:nth-child(1) .active {
     @apply text-[#FF9245];
 }
 
-header>div:last-child>a {
+header .group {
     @apply relative flex justify-center items-center gap-6 font-medium bg-[#FF9245] hover:bg-[#469BAF] rounded-full px-3 xs:px-5 py-3 transition-all cursor-pointer;
 }
 
-header>div:last-child>a>span {
+header .group>span {
     @apply relative w-[17.5px] h-[17.5px] border-2 rounded-full;
 }
 
-header>div:last-child>a svg {
+header .group svg {
     @apply absolute -left-[11px] group-hover:left-1 top-[2px] shrink-0 transition-all duration-200;
 }
 
@@ -123,7 +123,7 @@ header>div:last-child>a svg {
 }
 
 .sidebar a {
-    @apply block w-full text-center py-4 font-semibold text-[#333] text-lg transition-all;
+    @apply block w-full text-center py-4 font-semibold text-[#333] transition-all;
 }
 
 .sidebar a:hover,
@@ -132,7 +132,7 @@ header>div:last-child>a svg {
 }
 
 .close-btn {
-    @apply absolute top-5 right-5 hover:right-7 text-black hover:text-[#FF9245] cursor-pointer rotate-180 transition-all;
+    @apply absolute top-5 right-5 hover:right-7 text-[#333] hover:text-[#FF9245] cursor-pointer rotate-180 transition-all;
 }
 
 .burger-menu {

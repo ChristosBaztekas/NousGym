@@ -8,7 +8,7 @@
 /* HeroSection */
 
 #hero {
-    @apply relative text-white w-full sm:h-dvh z-0 overflow-hidden;
+    @apply relative text-white w-full sm:h-dvh overflow-hidden;
     background-image: url(../assets/images/forHome/hero.png);
     background-size: cover;
     background-position: center;
@@ -86,11 +86,11 @@
 }
 
 #process>p {
-    @apply relative text-[#FF9245] font-medium w-fit pt-7 mb-2 mx-auto z-20
+    @apply text-[#FF9245] font-medium w-fit pt-7 mb-2 mx-auto
 }
 
 #process>p>svg {
-    @apply absolute max-w-20 lg:max-w-[154px] max-h-[123px] max-lg:left-10 -top-4 -z-10 text-[#fff]
+    @apply absolute max-w-20 lg:max-w-[154px] max-h-[123px] max-lg:left-10 -top-4 -z-20 text-[#fff]
 }
 
 #process>h2 {
