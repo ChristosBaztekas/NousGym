@@ -1,18 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 @import "tailwindcss";
 
 @theme {
     --breakpoint-xs: 375px;
     --breakpoint-lg: 1100px;
-}
-
-* {
-    /* outline: 1px solid red; */
-    /* 
-    font-family: "Manrope", serif;
-    font-family: "Castoro", serif;
-    */
-
 }
 
 /* Hide scrollbar for all elements */
@@ -45,29 +36,29 @@ html {
 /* All Buttons Default Style */
 
 #hero button,
-#process button,
+#process a,
 #why button,
 #online button,
 #courses button,
-#faq button {
+#faq a {
     @apply relative flex justify-between w-full max-w-[240px] items-center gap-6 font-medium rounded-full px-5 py-3 text-sm transition-all cursor-pointer;
 }
 
 #hero button>span,
-#process button>span,
+#process a>span,
 #why button>span,
 #online button>span,
 #courses button>span,
-#faq button>span {
+#faq a>span {
     @apply relative w-[17.5px] h-[17.5px] border-2 rounded-full;
 }
 
 #hero button svg,
-#process button svg,
+#process a svg,
 #why button svg,
 #online button svg,
 #courses button svg,
-#faq button svg {
+#faq a svg {
     @apply absolute -left-[11px] group-hover:left-1 top-[2px] shrink-0 transition-all duration-200;
 }
 

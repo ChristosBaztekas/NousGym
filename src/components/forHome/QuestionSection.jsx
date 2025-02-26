@@ -33,13 +33,11 @@ export const QuestionSection = () => {
                 {/* Title */}
                 <h2>Συχνές Ερωτήσεις</h2>
                 {/* Button with icon */}
-                <a href="#appointment">
-                    <button className="group bg-[#FF9245] hover:bg-[#469BAF] mt-5 text-white">
-                        Βρες το Ψυχολόγο σου
-                        <span>
-                            <Icons.ArrowIcon />
-                        </span>
-                    </button>
+                <a href="#appointment" className="group bg-[#FF9245] hover:bg-[#469BAF] mt-5 text-white">
+                    Βρες το Ψυχολόγο σου
+                    <span>
+                        <Icons.ArrowIcon />
+                    </span>
                 </a>
             </section>
 
