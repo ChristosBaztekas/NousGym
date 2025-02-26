@@ -26,7 +26,6 @@ export const Header = () => {
                     <NavLink to="./">Αρχική</NavLink>
                     <NavLink to="./ss">Ποιοι Είμαστε</NavLink>
                     <NavLink to="./ss">NousGym+</NavLink>
-                    <NavLink to="./ss">Courses</NavLink>
                     <NavLink to="./ss">Επικοινωνία</NavLink>
                 </nav>
 
@@ -34,20 +33,19 @@ export const Header = () => {
                 <nav className={`sidebar z-50 ${menuOpen ? "open" : ""}`}>
                     <span className="close-btn" onClick={toggleMenu}><Icons.CloseArrowIcon /></span>
                     <img src={NousLogo} alt="NousGym Logo" width={86} height={86} />
-                    <NavLink to="./">Home</NavLink>
-                    <NavLink to="./about">About</NavLink>
-                    <NavLink to="./services">Services</NavLink>
-                    <NavLink to="./portfolio">Portfolio</NavLink>
-                    <NavLink to="./contact">Contact</NavLink>
+                    <NavLink to="./">Αρχική</NavLink>
+                    <NavLink to="./ss">Ποιοι Είμαστε</NavLink>
+                    <NavLink to="./ss">NousGym+</NavLink>
+                    <NavLink to="./ss">Επικοινωνία</NavLink>
                 </nav>
 
                 {/* Button with icon */}
-                <button className="group">
+                <a href="#appointment" className="group">
                     Βρες το Ψυχολόγο σου
                     <span>
                         <Icons.ArrowIcon />
                     </span>
-                </button>
+                </a>
             </div>
 
             {menuOpen && <div className="overlay z-50" onClick={toggleMenu}></div>}

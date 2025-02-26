@@ -56,9 +56,10 @@ export const TestimonialSection = () => {
                         </SwiperSlide>
                     ))}
                 </Swiper>
-
-                <button className="prev-btn"><Icons.TestimonialArrowIcon /></button>
-                <button className="next-btn"><Icons.TestimonialArrowIcon /></button>
+                <div className="w-full justify-between flex items-center px-10 sm:px-20">
+                    <button className="prev-btn"><Icons.TestimonialArrowIcon /></button>
+                    <button className="next-btn"><Icons.TestimonialArrowIcon /></button>
+                </div>
             </section>
         </main>
     )

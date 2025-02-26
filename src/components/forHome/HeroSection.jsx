@@ -1,7 +1,7 @@
 import { Header } from "../"; // Import the Header component
 import * as Icons from "../../utils/icons.util"; // Import all icons 
 // Import images
-import HeroPattern from "../../assets/images/patterns/heroPattern.png";
+import HeroPattern from "../../assets/images/patterns/PatternB.png";
 import TextPattern from "../../assets/images/patterns/textPattern.png";
 
 export const HeroSection = () => {
@@ -21,10 +21,13 @@ export const HeroSection = () => {
                 <h1><span>Βρες το </span><span>Ψυχολόγο</span><span> σου!</span></h1>
 
                 {/* Subheading */}
-                <h2>Μια σχέση εμπιστοσύνης <br />ξεκινά εδώ.</h2>
-
-                {/* Text pattern image */}
-                <img src={TextPattern} width={290} alt="Pattern" />
+                <h2>Μια σχέση εμπιστοσύνης
+                    <span>
+                        ξεκινά εδώ.
+                        {/* Text pattern image */}
+                        <img src={TextPattern} width={190} alt="Pattern" />
+                    </span>
+                </h2>
 
                 {/* Description */}
                 <h3>Βρες τον ψυχολόγο που ταιριάζει στις ανάγκες σου και ξεκίνησε το ταξίδι σου προς την ψυχική ευεξία!</h3>

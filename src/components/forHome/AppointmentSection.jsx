@@ -8,7 +8,7 @@ export const AppointmentSection = () => {
             <img src={TopPattern} alt="Pattern" className="topPattern" />
             <img src={BottomPattern} alt="Pattern" className="bottomPattern" />
 
-            <iframe src="https://api.leadconnectorhq.com/widget/booking/S7HBp6onNdnxRMEzNK3L" title="Appointment" width="90%" height="100%" frameBorder="0"></iframe>
+            <iframe src="https://api.leadconnectorhq.com/widget/booking/S7HBp6onNdnxRMEzNK3L" title="Appointment" width="100%" height="100%" frameBorder="0"></iframe>
         </main>
     )
 }

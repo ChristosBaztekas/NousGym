@@ -33,12 +33,14 @@ export const QuestionSection = () => {
                 {/* Title */}
                 <h2>Συχνές Ερωτήσεις</h2>
                 {/* Button with icon */}
-                <button className="group bg-[#FF9245] hover:bg-[#469BAF] mt-5 text-white">
-                    Βρες το Ψυχολόγο σου
-                    <span>
-                        <Icons.ArrowIcon />
-                    </span>
-                </button>
+                <a href="#appointment">
+                    <button className="group bg-[#FF9245] hover:bg-[#469BAF] mt-5 text-white">
+                        Βρες το Ψυχολόγο σου
+                        <span>
+                            <Icons.ArrowIcon />
+                        </span>
+                    </button>
+                </a>
             </section>
 
             <section>
@@ -48,7 +50,7 @@ export const QuestionSection = () => {
                             <span>{item.question}</span>
                             <span>{activeQuestion === index ? '–' : '+'}</span>
                         </div>
-                        <p className={`${activeQuestion === index ? 'max-h-72 opacity-100' : 'max-h-0 opacity-0'}`}>
+                        <p className={`${activeQuestion === index ? 'xl:max-h-72 opacity-100' : 'max-h-0 opacity-0'}`}>
                             {item.answer}
                         </p>
                     </article>

@@ -50,7 +50,9 @@ export const OnlineSection = () => {
 			</div>
 
 			{/* Logo image */}
-			<img src={NousOnline} alt="NousGym Logo" width={551} height={491} />
+			<div>
+			<img src={NousOnline} alt="NousGym Logo" width={520} height={460} />
+			</div>
 		</main>
 	)
 }

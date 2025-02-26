@@ -10,7 +10,7 @@ export const CoverSection = () => {
             <h2>
                 κάθε ανάγκη σου!
                 {/* Text pattern image */}
-                <img src={TextPattern} width={120} alt="Pattern" className="mr-auto" />
+                <img src={TextPattern} width={140} alt="Pattern" />
             </h2>
 
             <div>

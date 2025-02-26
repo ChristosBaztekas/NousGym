@@ -7,6 +7,10 @@ export const AboutSection = () => {
 
             <div>
                 {/* Title And Description */}
+                <p>
+                    ΔΩΡΕΑΝ
+                    <Icons.PraPatternIcon />
+                </p>
                 <h2>Τι είναι το NousGym;</h2>
                 <p>
                     Πιστεύουμε ότι η ψυχική υγεία είναι ο θεμέλιος λίθος για μια γεμάτη, ισορροπημένη ζωή. Για αυτό δημιουργήσαμε έναν χώρο που συνδυάζει τη τεχνολογία με την ανθρώπινη επαφή, για να παρέχουμε φροντίδα υψηλής ποιότητας σε κάθε άνθρωπο, ανεξαρτήτως τόπου ή χρόνου.
@@ -42,7 +46,9 @@ export const AboutSection = () => {
             </div>
 
             {/* Logo image */}
-            <img src={NousLogo} alt="NousGym Logo" width={493} height={497} />
+            <div>
+                <img src={NousLogo} alt="NousGym Logo" width={493} height={497} />
+            </div>
         </main>
     )
 }

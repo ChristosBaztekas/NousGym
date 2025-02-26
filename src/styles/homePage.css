@@ -1,20 +1,25 @@
 @import "tailwindcss";
 
+@theme {
+    --breakpoint-xs: 375px;
+    --breakpoint-lg: 1100px;
+}
+
 /* HeroSection */
 
 #hero {
-    @apply relative text-white w-full h-dvh z-0 overflow-hidden;
+    @apply relative text-white w-full sm:h-dvh z-0 overflow-hidden;
     background-image: url(../assets/images/forHome/hero.png);
     background-size: cover;
     background-position: center;
 }
 
 #hero section {
-    @apply relative flex flex-col my-28 mx-48 max-w-[900px] z-40;
+    @apply relative flex flex-col my-28 mx-5 sm:mx-10 lg:mx-20 xl:mx-48 max-w-[900px] z-40;
 }
 
 #hero section>h1 {
-    @apply text-[#ff9245] text-left text-[80px] font-bold leading-[89.25px];
+    @apply text-[#ff9245] text-left text-4xl sm:text-5xl md:text-6xl lg:text-[80px] font-bold lg:leading-[89.25px];
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -23,35 +28,51 @@
 }
 
 #hero section>h2 {
-    @apply text-6xl mt-5 leading-[70px];
+    @apply text-2xl md:text-4xl lg:text-6xl mt-7 sm:mt-5 xl:leading-[70px];
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+#hero section>h2 span {
+    @apply block max-w-fit
+}
+
+#hero section>h2 img {
+    @apply max-md:w-[45%]
+}
+
 #hero section>h3 {
-    @apply text-3xl mt-3.5 max-w-[735px] mr-auto leading-10;
+    @apply sm:text-lg md:text-xl lg:text-3xl mt-7 sm:mt-3.5 max-w-[735px] mr-auto md:leading-10;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* About Section */
 
 #about {
-    @apply flex justify-center items-start gap-16 m-20 text-[#2B2C2E]
+    @apply flex flex-col lg:flex-row justify-center items-center lg:items-start xl:gap-16 mx-5 sm:mx-10 my-10 sm:my-20 lg:m-20 text-[#2B2C2E]
+}
+
+#about>div>p:nth-child(1) {
+    @apply relative text-[#FF9245] font-medium w-fit pt-7 mb-2 z-20
+}
+
+#about>div>p>svg {
+    @apply absolute max-w-18 max-h-[83px] -left-4 -top-0 -z-10 text-[#0000000D]
 }
 
 #about h2 {
-    @apply text-5xl
+    @apply text-3xl sm:text-4xl lg:text-5xl font-medium
 }
 
 #about>div {
-    @apply flex flex-col gap-8 max-w-[572px]
+    @apply flex flex-col gap-5 sm:gap-8 max-w-[572px]
 }
 
 #about ul {
-    @apply flex flex-wrap gap-5 justify-between font-bold
+    @apply flex flex-col sm:flex-row gap-5 justify-between font-semibold sm:font-bold
 }
 
 #about li {
-    @apply flex gap-2 px-1
+    @apply flex gap-2 xs:px-1
 }
 
 #about li>svg {
@@ -61,7 +82,7 @@
 /* Process Section */
 
 #process {
-    @apply relative bg-[#F1F1F1] text-[#2B2C2E] text-center py-24
+    @apply relative bg-[#F1F1F1] text-[#2B2C2E] text-center px-5 py-12 md:py-24
 }
 
 #process>p {
@@ -69,15 +90,15 @@
 }
 
 #process>p>svg {
-    @apply absolute max-w-[154px] max-h-[123px] -top-4 -z-10 text-[#fff]
+    @apply absolute max-w-20 lg:max-w-[154px] max-h-[123px] max-lg:left-10 -top-4 -z-10 text-[#fff]
 }
 
 #process>h2 {
-    font-size: 56px;
+    @apply relative text-3xl xs:text-4xl lg:text-[56px] z-40
 }
 
 #process>div {
-    @apply flex justify-center items-start my-12;
+    @apply flex flex-col md:flex-row justify-center items-center md:items-start my-12;
 }
 
 #process>div>span {
@@ -85,23 +106,23 @@
 }
 
 #process>div>span h3 {
-    @apply text-3xl
+    @apply text-xl xs:text-2xl md:text-2xl lg:text-3xl font-medium
 }
 
 #process>div>div {
     /* Line Divider */
-    @apply w-full h-[1.218px] bg-[#2B2C2E] mx-7 mt-16 max-w-32;
+    @apply w-[1.218px] h-12 md:w-full md:h-[1.218px] bg-[#2b2c2eb9] md:mx-7 my-5 md:mt-16 max-w-32;
 }
 
 
 /* Toolkit Section */
 
 #toolkit {
-    @apply flex justify-center items-center gap-16 m-20 text-[#2B2C2E]
+    @apply flex max-lg:flex-col justify-center items-center gap-16 mx-5 my-10 sm:m-20 text-[#2B2C2E]
 }
 
 #toolkit>section {
-    @apply flex flex-col text-left max-w-[520px]
+    @apply flex flex-col text-left lg:max-w-[520px]
 }
 
 #toolkit>section>p:nth-child(1) {
@@ -109,16 +130,23 @@
 }
 
 #toolkit>section>p>svg {
-    @apply absolute max-w-[114px] max-h-[83px] -left-8 -top-0 -z-10 text-[#0000000D]
+    @apply absolute max-w-[114px] max-h-[83px] -left-4 top-0 -z-10 text-[#0000000D]
 }
 
 #toolkit>section>h2 {
-    @apply relative max-w-[440px] mb-5;
-    font-size: 56px;
+    @apply relative max-w-[440px] mb-5 text-4xl sm:text-5xl lg:text-[56px] z-40
+}
+
+#toolkit>section>h2 span {
+    @apply block max-w-fit
+}
+
+#toolkit>section>h2 img {
+    @apply w-[50%]
 }
 
 #toolkit>section>form {
-    @apply flex justify-between gap-5 my-6;
+    @apply flex max-sm:flex-col justify-between gap-5 my-6;
 }
 
 #toolkit>section>form>div {
@@ -126,40 +154,40 @@
 }
 
 #toolkit>section>form input {
-    @apply w-full max-w-[200px] h-[52px] px-4 rounded-full bg-[#F1F1F1] outline-none;
+    @apply w-full sm:max-w-[200px] h-[52px] px-4 rounded-full bg-[#F1F1F1] outline-none;
 }
 
 #toolkit>section>form button {
-    @apply bg-[#469BAF] hover:bg-[#469cafc9] w-[120px] h-full rounded-full px-3 text-sm shrink-0 text-white outline-none cursor-pointer transition-all;
+    @apply bg-[#469BAF] hover:bg-[#469cafc9] w-[120px] h-full rounded-full px-3 text-sm shrink-0 text-white ml-auto outline-none cursor-pointer transition-all;
 }
 
 
 /* Why Section */
 #why {
-    @apply relative text-white bg-[#469BAF] flex justify-center items-center gap-6 py-20 text-center
+    @apply relative text-white bg-[#469BAF] flex max-md:flex-col justify-center items-center gap-6 py-10 px-5 lg:py-20 text-center
 }
 
 #why>h3 {
-    @apply text-3xl font-bold
+    @apply text-lg sm:text-2xl lg:text-3xl font-bold
 }
 
 
 /* Online Section */
 
 #online {
-    @apply flex justify-center items-center gap-16 m-20 text-[#2B2C2E]
+    @apply flex max-lg:flex-col justify-center items-center gap-16 mx-5 my-10 sm:m-20 text-[#2B2C2E]
 }
 
 #online h2 {
-    @apply text-5xl
+    @apply text-4xl sm:text-5xl font-medium
 }
 
 #online>div {
-    @apply flex flex-col gap-6 max-w-[572px]
+    @apply flex flex-col gap-6 lg:max-w-[572px]
 }
 
 #online ul {
-    @apply flex flex-col gap-3 justify-between font-bold
+    @apply flex flex-col gap-3 justify-between font-semibold max-sm:text-sm
 }
 
 #online li {
@@ -181,32 +209,34 @@
 }
 
 #appointment iframe {
-    @apply h-[790px] my-20 max-w-[1300px];
+    @apply h-screen lg:h-[790px] sm:mx-10 my-20 max-w-[1300px];
 }
 
 
 /* Cover Section */
 
 #cover {
-    @apply relative max-w-[790px] text-center mx-auto my-20 text-[#2B2C2E];
+    @apply relative max-w-[790px] text-center px-5 sm:px-10 mx-auto my-10 sm:my-20 text-[#2B2C2E];
 }
 
 #cover>h2:nth-child(1) {
-    @apply relative text-center;
-    font-size: 56px;
+    @apply relative text-center text-xl xs:text-2xl sm:text-4xl md:text-5xl lg:text-[56px] font-medium;
 }
 
 #cover>h2:nth-child(2) {
-    @apply relative text-center w-fit mx-auto;
-    font-size: 56px;
+    @apply relative text-center text-xl xs:text-2xl sm:text-4xl md:text-5xl lg:text-[56px] w-fit mx-auto font-medium;
+}
+
+#cover img {
+    @apply w-14 sm:w-30 mr-auto max-sm:h-0.5;
 }
 
 #cover>div {
-    @apply flex mt-10 text-2xl
+    @apply flex mt-10 sm:text-lg md:text-2xl
 }
 
 #cover ul {
-    @apply grid grid-cols-2 gap-5
+    @apply grid sm:grid-cols-2 gap-2 sm:gap-5 font-semibold
 }
 
 #cover li {
@@ -221,26 +251,26 @@
 /* Courses Section */
 
 #courses {
-    @apply relative flex justify-center items-center py-20 gap-16 bg-[#F1F1F1] text-[#2B2C2E]
+    @apply relative flex max-lg:flex-col justify-center items-center px-5 sm:px-10 py-20 gap-16 bg-[#F1F1F1] text-[#2B2C2E]
 }
 
 #courses h2 {
-    @apply text-5xl
+    @apply text-4xl sm:text-5xl
 }
 
 #courses>div {
-    @apply flex flex-col gap-8 max-w-[570px]
+    @apply flex flex-col gap-5 sm:gap-8 lg:max-w-[570px]
 }
 
 
 /* Questions Section */
 
 #faq {
-    @apply flex justify-center items-start py-20 gap-16 text-[#2B2C2E]
+    @apply flex max-lg:flex-col justify-center items-start px-5 sm:px-10 py-10 sm:py-20 gap-16 text-[#2B2C2E]
 }
 
 #faq>section:nth-child(1)>h2 {
-    @apply text-5xl
+    @apply text-4xl sm:text-5xl
 }
 
 #faq>section:nth-child(1)>span {
@@ -252,7 +282,7 @@
 }
 
 #faq article {
-    @apply mb-4 border-b-2 border-[#EAE9E8] w-full max-w-[665px] cursor-pointer;
+    @apply mb-4 border-b-2 border-[#EAE9E8] w-full lg:max-w-[665px] cursor-pointer;
 }
 
 #faq article>div {
@@ -260,7 +290,7 @@
 }
 
 #faq article>div>span:nth-child(1) {
-    @apply text-lg text-justify transition-opacity duration-300
+    @apply text-base sm:text-lg md:text-justify transition-opacity duration-300
 }
 
 #faq article>div>span:nth-child(2) {
@@ -276,27 +306,14 @@
 }
 
 
-/* Widget Form Section */
-
-#widget {
-    @apply flex justify-center items-center
-}
-
-#widget iframe {
-    @apply h-[790px] my-20;
-}
-
-
-
-
 /* Testimonial Section */
 
 #testimonial {
-    @apply relative py-20 gap-16 bg-[#F1F1F1] text-[#2B2C2E]
+    @apply relative px-5 sm:px-10 py-10 sm:py-20 gap-16 bg-[#F1F1F1] text-[#2B2C2E]
 }
 
 #testimonial>section {
-    @apply relative max-w-[768px] mx-auto mt-10
+    @apply relative w-full md:w-[85%] lg:max-w-[768px] mx-auto mt-10
 }
 
 #testimonial>section>p {
@@ -304,7 +321,7 @@
 }
 
 #testimonial h2 {
-    @apply text-5xl
+    @apply text-4xl md:text-5xl
 }
 
 #testimonial svg {
@@ -312,13 +329,24 @@
 }
 
 #testimonial div {
-    @apply text-2xl
+    @apply md:text-xl lg:text-2xl
 }
 
 #testimonial .prev-btn {
-    @apply absolute -left-36 top-1/4 mt-10 transition-all cursor-pointer text-[#2B2C2E] hover:text-[#FF9245] outline-none rotate-180;
+    @apply md:absolute md:-left-20 lg:-left-36 top-1/4 max-md:w-5 md:mt-10 transition-all cursor-pointer text-[#2B2C2E] hover:text-[#FF9245] outline-none rotate-180;
 }
 
 #testimonial .next-btn {
-    @apply absolute -right-36 top-1/4 mt-10 transition-all cursor-pointer text-[#2B2C2E] hover:text-[#FF9245] outline-none;
+    @apply md:absolute md:-right-20 lg:-right-36 max-md:w-5 top-1/4 md:mt-10 transition-all cursor-pointer text-[#2B2C2E] hover:text-[#FF9245] outline-none;
+}
+
+
+/* Widget Form Section */
+
+#widget {
+    @apply flex justify-center items-center
+}
+
+#widget iframe {
+    @apply h-[790px] m-5 sm:m-10 lg:m-20;
 }

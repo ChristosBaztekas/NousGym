@@ -13,7 +13,7 @@ export const HomePage = () => {
             <OnlineSection />
             <AppointmentSection />
             <CoverSection />
-            <CoursesSection />
+            {/* <CoursesSection /> */}
             <QuestionSection />
             <TestimonialSection />
             <WidgetSection />

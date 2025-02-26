@@ -45,12 +45,14 @@ export const ProcessSection = () => {
             </div>
 
             {/* Button with icon */}
-            <button className="group bg-[#FF9245] hover:bg-[#469BAF] mx-auto text-white">
-                Ξεκίνα Τώρα!
-                <span>
-                    <Icons.ArrowIcon />
-                </span>
-            </button>
+            <a href="#appointment">
+                <button className="group bg-[#FF9245] hover:bg-[#469BAF] mx-auto text-white">
+                    Ξεκίνα Τώρα!
+                    <span>
+                        <Icons.ArrowIcon />
+                    </span>
+                </button>
+            </a>
         </main>
     )
 }
