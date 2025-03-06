@@ -204,7 +204,7 @@
 
 #appointment {
     @apply relative flex justify-center items-center text-center;
-    background-image: url(../assets/images/forHome/appointment.webp);
+    background-image: url(@/assets/images/forHome/appointment.webp);
     background-position: center;
     background-size: cover;
 }
