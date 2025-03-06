@@ -25,6 +25,9 @@ export * from "./forWho/InvestSection.jsx"
 export * from "./forWho/ForYouSection.jsx"
 export * from "./forWho/ChooseOurSection.jsx"
 
+// Nous Page Components
+export * from "./forNous/HeroNous.jsx"
+
 // Custom Components
 export * from "./custom/CheckBox.jsx"
 export * from "./custom/SmoothScrollButton.jsx"

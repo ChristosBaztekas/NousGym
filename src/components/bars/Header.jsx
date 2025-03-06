@@ -38,7 +38,7 @@ export const Header = () => {
                         {/* Navigation links */}
                         <NavLink to="/">Αρχική</NavLink>
                         <NavLink to="/who-we">Ποιοι Είμαστε</NavLink>
-                        <NavLink to="/ss">NousGym+</NavLink>
+                        <NavLink to="/nous-gym">NousGym+</NavLink>
                         <NavLink to="/ss">Επικοινωνία</NavLink>
                     </nav>
 
@@ -55,7 +55,7 @@ export const Header = () => {
                 <img src={NousLogo} alt="NousGym Logo" width={86} height={86} />
                 <NavLink to="/">Αρχική</NavLink>
                 <NavLink to="/who-we">Ποιοι Είμαστε</NavLink>
-                <NavLink to="/ss">NousGym+</NavLink>
+                <NavLink to="/nous-gym">NousGym+</NavLink>
                 <NavLink to="/ss">Επικοινωνία</NavLink>
             </nav>
         </>

@@ -11,7 +11,7 @@
 }
 
 * {
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
@@ -131,7 +131,8 @@ footer a:hover {
 #courses button,
 #faq a,
 #description a,
-#invest a {
+#invest a,
+#nous a {
     @apply relative flex justify-between w-full max-w-[240px] items-center gap-6 font-medium rounded-full px-5 py-3 text-sm transition-all cursor-pointer;
 }
 
@@ -142,7 +143,8 @@ footer a:hover {
 #courses button>span,
 #faq a>span,
 #description a>span,
-#invest a>span {
+#invest a>span,
+#nous a>span {
     @apply relative w-[17.5px] h-[17.5px] border-2 rounded-full;
 }
 
@@ -153,6 +155,7 @@ footer a:hover {
 #courses button svg,
 #faq a svg,
 #description a svg,
-#invest a svg {
+#invest a svg,
+#nous a svg {
     @apply absolute -left-[11px] group-hover:left-1 top-[2px] shrink-0 transition-all duration-200;
 }
