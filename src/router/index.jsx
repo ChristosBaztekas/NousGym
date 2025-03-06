@@ -1,10 +1,15 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { HomePage } from "../pages/HomePage";
+import { WhoPage } from "../pages/WhoPage";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <HomePage />,
+    },
+    {
+        path: "/who-we",
+        element: <WhoPage />,
     },
 
     // Route for not existing urls

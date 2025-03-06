@@ -33,10 +33,10 @@ export const Header = () => {
                 <div>
                     <nav>
                         {/* Navigation links */}
-                        <NavLink to="./">Αρχική</NavLink>
-                        <NavLink to="./ss">Ποιοι Είμαστε</NavLink>
-                        <NavLink to="./ss">NousGym+</NavLink>
-                        <NavLink to="./ss">Επικοινωνία</NavLink>
+                        <NavLink to="/">Αρχική</NavLink>
+                        <NavLink to="/who-we">Ποιοι Είμαστε</NavLink>
+                        <NavLink to="/ss">NousGym+</NavLink>
+                        <NavLink to="/ss">Επικοινωνία</NavLink>
                     </nav>
 
                     {/* Button with icon */}
@@ -53,10 +53,10 @@ export const Header = () => {
             <nav className={`sidebar z-50 ${menuOpen ? "open" : ""}`}>
                 <span className="close-btn" onClick={toggleMenu}><Icons.CloseArrowIcon /></span>
                 <img src={NousLogo} alt="NousGym Logo" width={86} height={86} />
-                <NavLink to="./">Αρχική</NavLink>
-                <NavLink to="./ss">Ποιοι Είμαστε</NavLink>
-                <NavLink to="./ss">NousGym+</NavLink>
-                <NavLink to="./ss">Επικοινωνία</NavLink>
+                <NavLink to="/">Αρχική</NavLink>
+                <NavLink to="/who-we">Ποιοι Είμαστε</NavLink>
+                <NavLink to="/ss">NousGym+</NavLink>
+                <NavLink to="/ss">Επικοινωνία</NavLink>
             </nav>
         </>
     );

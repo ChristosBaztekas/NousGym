@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+@theme {
+    --breakpoint-xs: 375px;
+    --breakpoint-lg: 1100px;
+}
+
+
+/* Hero aboutVision Section */
+
+#heroWho {
+    @apply relative text-white w-full h-96 sm:h-[500px] overflow-hidden bg-red-500;
+    background-image: url(../../assets/images/forHome/hero.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+#heroWho section {
+    @apply relative flex justify-center items-center z-40 h-[60%];
+}
+
+#heroWho section>h1 {
+    @apply text-[#FFF] text-3xl sm:text-4xl md:text-[40px] text-center font-bold m-5;
+}
+
+
+/* Description Section */
+
+#description {
+    @apply relative px-5 sm:px-10 py-10 sm:py-20 gap-16 bg-[#F1F1F1] text-[#2B2C2E]
+}
+
+#description>section {
+    @apply relative flex flex-col justify-center items-center gap-5
+}
+
+#description>section p {
+    @apply font-semibold sm:text-[22px] max-w-[1030px] text-center
+}
+
+
+/* aboutVision Section */
+
+#aboutVision {
+    @apply flex flex-col lg:flex-row justify-center items-center xl:gap-16 m-5 my-10 sm:m-10 text-[#2B2C2E]
+}
+
+#aboutVision h2 {
+    @apply text-3xl sm:text-4xl lg:text-5xl font-medium
+}
+
+#aboutVision>div {
+    @apply flex flex-col gap-5 sm:gap-8 max-w-[572px]
+}
+
+
+/* Who Offer Section */
+
+#offer {
+    @apply relative text-left p-5 sm:p-10 py-10 sm:py-20 text-[#2B2C2E] bg-[#F1F1F1];
+}
+
+#offer>h2 {
+    @apply relative text-3xl sm:text-4xl md:text-5xl lg:text-[56px];
+}
+
+#offer>p {
+    @apply font-medium sm:text-[22px] max-w-[1070px] my-10
+}
+
+#offer>div {
+    @apply flex mt-10 text-sm sm:text-lg md:text-xl
+}
+
+#offer ul {
+    @apply flex flex-col gap-2 sm:gap-5 font-semibold
+}
+
+#offer li {
+    @apply flex text-left items-start gap-2 px-1
+}
+
+#offer li>svg {
+    @apply text-[#479BAF] w-5 shrink-0
+}
+
+
+/* Invest Section */
+
+#invest {
+    @apply relative text-white bg-[#FF9245] flex max-md:flex-col justify-center items-center gap-6 py-10 px-5 lg:py-20 text-left
+}
+
+#invest>h3 {
+    @apply text-xl sm:text-3xl lg:text-[56px] font-bold
+}
+
+
+/* For You Section */
+
+#forU {
+    @apply relative flex max-lg:flex-col justify-center items-center px-5 sm:px-10 py-20 gap-16 bg-[#F1F1F1] text-[#2B2C2E]
+}
+
+#forU h2 {
+    @apply text-4xl sm:text-5xl
+}
+
+#forU>div {
+    @apply flex flex-col gap-5 sm:gap-8 lg:max-w-[570px]
+}
+
+
+/* Choose Section */
+
+#choose {
+    @apply flex max-lg:flex-col justify-center items-center gap-16 mx-5 my-10 sm:m-20 text-[#2B2C2E]
+}
+
+#choose>section {
+    @apply flex flex-col gap-5 text-left lg:max-w-[520px]
+}
+
+#choose>section>h2 {
+    @apply relative mb-5 text-4xl sm:text-5xl lg:text-[56px] z-40
+}

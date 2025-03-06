@@ -12,6 +12,7 @@
 }
 
 * {
+    outline: 1px solid red;
     -ms-overflow-style: none;
     /* Internet Explorer 10+ */
     scrollbar-width: none;
@@ -40,7 +41,7 @@ html {
 #why button,
 #online button,
 #courses button,
-#faq a {
+#faq a, #description a, #invest button {
     @apply relative flex justify-between w-full max-w-[240px] items-center gap-6 font-medium rounded-full px-5 py-3 text-sm transition-all cursor-pointer;
 }
 
@@ -49,7 +50,9 @@ html {
 #why button>span,
 #online button>span,
 #courses button>span,
-#faq a>span {
+#faq a>span,
+#description a>span,
+#invest button>span {
     @apply relative w-[17.5px] h-[17.5px] border-2 rounded-full;
 }
 
@@ -58,7 +61,9 @@ html {
 #why button svg,
 #online button svg,
 #courses button svg,
-#faq a svg {
+#faq a svg,
+#description a svg,
+#invest button svg {
     @apply absolute -left-[11px] group-hover:left-1 top-[2px] shrink-0 transition-all duration-200;
 }
 

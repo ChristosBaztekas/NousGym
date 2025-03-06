@@ -5,11 +5,11 @@
     --breakpoint-lg: 1100px;
 }
 
-/* HeroSection */
+/* Here Home Section */
 
 #hero {
     @apply relative text-white w-full sm:h-dvh overflow-hidden;
-    background-image: url(../assets/images/forHome/hero.webp);
+    background-image: url(@/assets//images/forHome/hero.webp);
     background-size: cover;
     background-position: center;
 }
