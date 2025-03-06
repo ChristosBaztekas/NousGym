@@ -27,6 +27,11 @@ export * from "./forWho/ChooseOurSection.jsx"
 
 // Nous Page Components
 export * from "./forNous/HeroNous.jsx"
+export * from "./forNous/VideoSection.jsx"
+export * from "./forNous/GymPlusSection.jsx"
+export * from "./forNous/BecomeSection.jsx"
+export * from "./forNous/ExistSection.jsx"
+export * from "./forNous/BenefitsSection.jsx"
 
 // Custom Components
 export * from "./custom/CheckBox.jsx"

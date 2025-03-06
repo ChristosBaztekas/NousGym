@@ -16,212 +16,123 @@
 }
 
 #nous section {
-    @apply relative flex flex-col justify-end items-center h-[270px] xs:h-[310px] md:h-[550px];
+    @apply absolute w-full bottom-5 md:bottom-14;
 }
 
 #nous section>h2 {
-    @apply text-[17px] mb-22 md:mb-52 font-medium;
+    @apply text-[17px] mb-22 md:mb-52 font-medium text-center;
 }
 
 
-/* About Section */
+/* Gym+ Section */
 
-#about {
-    @apply flex flex-col lg:flex-row justify-center items-center lg:items-start xl:gap-16 mx-5 sm:mx-10 my-10 sm:my-20 lg:m-20 text-[#2B2C2E]
+#gym {
+    @apply relative flex max-lg:flex-col justify-center items-center gap-16 px-5 py-10 sm:p-20 bg-[#F1F1F1] text-[#2B2C2E]
 }
 
-#about>div>p:nth-child(1) {
-    @apply relative text-[#FF9245] font-medium w-fit pt-7 mb-2 z-20
+#gym h2 {
+    @apply text-4xl sm:text-5xl font-medium
 }
 
-#about>div>p>svg {
-    @apply absolute max-w-18 max-h-[83px] -left-4 -top-0 -z-10 text-[#0000000D]
+#gym>div {
+    @apply flex flex-col gap-6 lg:max-w-[572px]
 }
 
-#about h2 {
-    @apply text-3xl sm:text-4xl lg:text-5xl font-medium
+#gym ul {
+    @apply flex flex-col gap-3 justify-between font-semibold max-sm:text-sm
 }
 
-#about>div {
-    @apply flex flex-col gap-5 sm:gap-8 max-w-[572px]
+#gym li {
+    @apply flex gap-2 px-1
 }
 
-#about ul {
-    @apply flex flex-col sm:flex-row gap-5 justify-between font-semibold sm:font-bold
-}
-
-#about li {
-    @apply flex gap-2 xs:px-1
-}
-
-#about li>svg {
+#gym li>svg {
     @apply text-[#FF9245]
 }
 
-/* Process Section */
 
-#process {
+/* Exist Section */
+
+#exist {
     @apply relative bg-[#F1F1F1] text-[#2B2C2E] text-center px-5 py-12 z-10 md:py-24
 }
 
-#process>p {
-    @apply relative text-[#FF9245] font-medium w-fit pt-7 mb-2 mx-auto
+#exist>h2>svg {
+    @apply absolute max-w-20 lg:max-w-[154px] max-h-[123px] left-[40%] -top-10 -z-20 text-[#fff]
 }
 
-#process>p>svg {
-    @apply absolute max-w-20 lg:max-w-[154px] max-h-[123px] max-lg:left-10 -top-4 -z-20 text-[#fff]
+#exist>h2 {
+    @apply relative text-3xl xs:text-4xl lg:text-[56px] w-fit z-40 mx-auto
 }
 
-#process>h2 {
-    @apply relative text-3xl xs:text-4xl lg:text-[56px] z-40
+#exist>p {
+    @apply max-w-[680px] mx-auto mt-5
 }
 
-#process>div {
+#exist>div {
     @apply flex flex-col md:flex-row justify-center items-center md:items-start my-12;
 }
 
-#process>div>span {
-    @apply flex flex-col justify-center items-center gap-4 max-w-64
+#exist>div>span {
+    @apply relative flex flex-col justify-center items-center gap-14 max-w-64
 }
 
-#process>div>span h3 {
-    @apply text-xl xs:text-2xl md:text-2xl lg:text-3xl font-medium
+#exist>div>span svg:last-of-type {
+    @apply absolute bottom-16
 }
 
-#process>div>div {
+
+#exist>div>div {
     /* Line Divider */
     @apply w-[1.218px] h-12 md:w-full md:h-[1.218px] bg-[#2b2c2eb9] md:mx-7 my-5 md:mt-16 max-w-32;
 }
 
 
-/* Toolkit Section */
+/* Become Section */
 
-#toolkit {
-    @apply flex max-lg:flex-col justify-center items-center gap-16 mx-5 my-10 sm:m-20 text-[#2B2C2E]
+#become {
+    @apply relative text-white bg-[#FF9245] flex max-md:flex-col justify-center items-center gap-6 py-10 px-5 lg:py-20 text-left
 }
 
-#toolkit>section {
-    @apply flex flex-col text-left lg:max-w-[520px]
-}
-
-#toolkit>section>p:nth-child(1) {
-    @apply relative text-[#FF9245] font-medium w-fit pt-7 mb-2 z-20
-}
-
-#toolkit>section>p>svg {
-    @apply absolute max-w-[114px] max-h-[83px] -left-4 top-0 -z-10 text-[#0000000D]
-}
-
-#toolkit>section>h2 {
-    @apply relative max-w-[440px] mb-5 text-4xl sm:text-5xl lg:text-[56px] z-40
-}
-
-#toolkit>section>h2 span {
-    @apply block max-w-fit
-}
-
-#toolkit>section>h2 img {
-    @apply w-[50%]
-}
-
-#toolkit>section>form {
-    @apply flex max-sm:flex-col justify-between gap-5 my-6;
-}
-
-#toolkit>section>form>div {
-    @apply flex w-full h-[52px] rounded-full bg-[#F1F1F1];
-}
-
-#toolkit>section>form input {
-    @apply w-full sm:max-w-[200px] h-[52px] px-4 rounded-full bg-[#F1F1F1] outline-none;
-}
-
-#toolkit>section>form button {
-    @apply bg-[#469BAF] hover:bg-[#469cafc9] w-[120px] h-full rounded-full px-3 text-sm shrink-0 text-white ml-auto outline-none cursor-pointer transition-all;
+#become>h3 {
+    @apply text-xl sm:text-3xl max-w-[800px] font-medium
 }
 
 
-/* Why Section */
-#why {
-    @apply relative text-white bg-[#469BAF] flex max-md:flex-col justify-center items-center gap-6 py-10 px-5 lg:py-20 text-center
-}
+/* Benefit Section */
 
-#why>h3 {
-    @apply text-lg sm:text-2xl lg:text-3xl font-bold
-}
-
-
-/* Online Section */
-
-#online {
-    @apply flex max-lg:flex-col justify-center items-center gap-16 mx-5 my-10 sm:m-20 text-[#2B2C2E]
-}
-
-#online h2 {
-    @apply text-4xl sm:text-5xl font-medium
-}
-
-#online>div {
-    @apply flex flex-col gap-6 lg:max-w-[572px]
-}
-
-#online ul {
-    @apply flex flex-col gap-3 justify-between font-semibold max-sm:text-sm
-}
-
-#online li {
-    @apply flex gap-2 px-1
-}
-
-#online li>svg {
-    @apply text-[#FF9245]
-}
-
-
-/* Appointments Section */
-
-#appointment {
-    @apply relative flex justify-center items-center text-center;
-    background-image: url(../assets/images/forHome/appointment.webp);
-    background-position: center;
-    background-size: cover;
-}
-
-#appointment iframe {
-    @apply h-screen lg:h-[790px] sm:mx-10 my-20 max-w-[1300px];
-}
-
-
-/* Cover Section */
-
-#cover {
+#benefit {
     @apply relative max-w-[790px] text-center px-5 sm:px-10 mx-auto my-10 sm:my-20 text-[#2B2C2E];
 }
 
-#cover>h2:nth-child(1) {
+#benefit>h2 {
     @apply relative text-center text-xl xs:text-2xl sm:text-4xl md:text-5xl lg:text-[56px] font-medium;
 }
 
-#cover>h2:nth-child(2) {
-    @apply relative text-center text-xl xs:text-2xl sm:text-4xl md:text-5xl lg:text-[56px] w-fit mx-auto font-medium;
-}
-
-#cover img {
+#benefit img {
     @apply w-14 sm:w-30 mr-auto max-sm:h-0.5;
 }
 
-#cover>div {
-    @apply flex mt-10 sm:text-lg md:text-2xl
+#benefit>div {
+    @apply flex mt-10 text-lg md:text-2xl
 }
 
-#cover ul {
-    @apply grid sm:grid-cols-2 gap-2 sm:gap-5 font-semibold
+#benefit ul {
+    @apply flex flex-col gap-5 sm:gap-8 text-left mb-16
 }
 
-#cover li {
-    @apply flex text-left items-center gap-2 px-1
+#benefit li>article {
+    @apply flex flex-col items-start gap-3
 }
 
-#cover li>svg {
-    @apply text-[#479BAF] w-5 shrink-0
+#benefit li>article>span {
+    @apply flex items-center gap-3
+}
+
+#benefit li>article>span:first-of-type>svg {
+    @apply text-[#479BAF] w-5 xs:w-7 shrink-0
+}
+
+#benefit>a {
+    @apply flex justify-center w-full max-w-[640px] mx-auto text-center gap-6 font-medium px-5 py-3 bg-[#FF9245] hover:bg-[#469BAF] text-white rounded-full transition-all
 }
