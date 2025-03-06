@@ -1,7 +1,8 @@
-import * as Icons from "../../utils/icons.util" // Import all icons
+import {SmoothScrollButton} from "../"; // Import the SmoothScrollButton component
+import * as Icons from "../../utils/icons.util"; // Import all icons
 // Import images
-import TopPattern from "../../assets/images/patterns/patternT.png"
-import BottomPattern from "../../assets/images/patterns/patternB.png"
+import TopPattern from "@/assets/images/patterns/patternT.png";
+import BottomPattern from "@/assets/images/patterns/patternB.png";
 
 export const ProcessSection = () => {
     return (
@@ -45,12 +46,9 @@ export const ProcessSection = () => {
             </div>
 
             {/* Button with icon */}
-            <a href="#appointment" className="group bg-[#FF9245] hover:bg-[#469BAF] mx-auto text-white">
+            <SmoothScrollButton href="#appointment" color="bg-[#FF9245] hover:bg-[#469BAF] mx-auto text-white">
                 Ξεκίνα Τώρα!
-                <span>
-                    <Icons.ArrowIcon />
-                </span>
-            </a>
+            </SmoothScrollButton>
         </main>
-    )
-}
+    );
+};

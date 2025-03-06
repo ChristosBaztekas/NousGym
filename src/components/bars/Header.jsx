@@ -1,17 +1,20 @@
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router";
-import NousLogo from "../../assets/Logo.png"; // Import the logo image
+import { NavLink } from "react-router-dom";
+import { SmoothScrollButton } from "../";
 import * as Icons from "../../utils/icons.util"; // Import all icons
+import NousLogo from "@/assets/Logo.png"; // Import the logo image
 
 export const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
 
+    // Function to toggle the mobile menu
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
 
     useEffect(() => {
+        // Function to handle scroll event
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 50);
         };
@@ -22,7 +25,7 @@ export const Header = () => {
     return (
         <>
             <header className={`sticky-header ${isScrolled ? "scrolled" : ""}`}>
-
+                {/* Burger menu icon for mobile view */}
                 <div className="burger-menu" onClick={toggleMenu}>
                     <Icons.BurgerIcon />
                 </div>
@@ -40,12 +43,9 @@ export const Header = () => {
                     </nav>
 
                     {/* Button with icon */}
-                    <a href="#appointment" className="group">
+                    <SmoothScrollButton href="#appointment">
                         Βρες το Ψυχολόγο σου
-                        <span>
-                            <Icons.ArrowIcon />
-                        </span>
-                    </a>
+                    </SmoothScrollButton>
                 </div>
             </header>
 

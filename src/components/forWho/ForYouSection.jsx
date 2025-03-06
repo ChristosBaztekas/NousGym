@@ -1,9 +1,9 @@
-// Import Image
-import NousCourse from "../../assets/images/forHome/toolkit.svg";
-import TopPattern from "../../assets/images/patterns/patternT.png"
-import BottomPattern from "../../assets/images/patterns/patternB.png"
-import FloatOPattern from "../../assets/images/patterns/floatingO.svg";
-import FloatBPattern from "../../assets/images/patterns/floatingB.svg";
+// Import images
+import NousCourse from "@/assets/images/forHome/toolkit.svg";
+import TopPattern from "@/assets/images/patterns/patternT.png";
+import BottomPattern from "@/assets/images/patterns/patternB.png";
+import FloatOPattern from "@/assets/images/patterns/floatingO.svg";
+import FloatBPattern from "@/assets/images/patterns/floatingB.svg";
 
 export const ForYouSection = () => {
     return (
@@ -27,10 +27,9 @@ export const ForYouSection = () => {
                 <p>
                     Κάθε συνεδρία προσαρμόζεται στις δικές σου ανάγκες, για να επιτευχθούν όλοι οι στόχοι που έχεις θέσει, φυσικά σε συνεργασία και με τον ψυχολόγο σου.
                 </p>
-
             </div>
 
-            {/* side image */}
+            {/* Side image with floating patterns */}
             <span className="relative">
                 <img src={NousCourse} alt="NousGym Logo" width={435} height={483} />
                 <img className="absolute top-0 left-10 animate-pulse max-sm:w-14" src={FloatOPattern} width={80} height={80} alt="ToolKit Pattern" />

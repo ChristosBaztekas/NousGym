@@ -27,3 +27,4 @@ export * from "./forWho/ChooseOurSection.jsx"
 
 // Custom Components
 export * from "./custom/CheckBox.jsx"
+export * from "./custom/SmoothScrollButton.jsx"

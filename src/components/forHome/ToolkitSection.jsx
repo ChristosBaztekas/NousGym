@@ -1,10 +1,10 @@
-import * as Icons from "../../utils/icons.util"; // Import all icons
 import { CheckBox } from "../custom/CheckBox"; // Import CheckBox component
+import * as Icons from "../../utils/icons.util"; // Import all icons
 // Import images
-import ToolKit from "../../assets/images/forHome/toolkit.svg";
-import TextPattern from "../../assets/images/patterns/textPattern.png";
-import FloatOPattern from "../../assets/images/patterns/floatingO.svg";
-import FloatBPattern from "../../assets/images/patterns/floatingB.svg";
+import ToolKit from "@/assets/images/forHome/toolkit.svg";
+import TextPattern from "@/assets/images/patterns/textPattern.png";
+import FloatOPattern from "@/assets/images/patterns/floatingO.svg";
+import FloatBPattern from "@/assets/images/patterns/floatingB.svg";
 
 export const ToolkitSection = () => {
     return (

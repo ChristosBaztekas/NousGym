@@ -1,10 +1,20 @@
-import NousLogo from "../../assets/Logo.png"; // Import the logo image
 import * as Icons from "../../utils/icons.util"; // Import all icons
+import NousLogo from "@/assets/Logo.png"; // Import the logo image
+
+// List of services provided by NousGym
+const servicesForAdults = [
+    "Για Ενήλικες",
+    "Ατομικές Συνεδρίες"
+];
+
+const servicesForMinors = [
+    "Για Ανήλικους",
+    "Ομαδικές Συνεδρίες"
+];
 
 export const AboutSection = () => {
     return (
         <main id="about">
-
             <div>
                 {/* Title And Description */}
                 <p>
@@ -22,26 +32,24 @@ export const AboutSection = () => {
                     Κάθε υπηρεσία, κάθε εργαλείο, κάθε παροχή σχεδιάζεται με γνώμονα τον ΑΝΘΡΩΠΟ, γιατί όλοι μας αξίζουμε τη φροντίδα που μας παρακινεί, για να προχωρήσουμε μπροστά.
                 </p>
 
-                {/* List of services */}
+                {/* List of services for adults */}
                 <ul>
-                    <li>
-                        <Icons.CheckIcon />
-                        Για Ενήλικες
-                    </li>
-                    <li>
-                        <Icons.CheckIcon />
-                        Ατομικές Συνεδρίες
-                    </li>
+                    {servicesForAdults.map((service, index) => (
+                        <li key={index}>
+                            <Icons.CheckIcon />
+                            {service}
+                        </li>
+                    ))}
                 </ul>
+
+                {/* List of services for minors */}
                 <ul>
-                    <li>
-                        <Icons.CheckIcon />
-                        Για Ανήλικους
-                    </li>
-                    <li>
-                        <Icons.CheckIcon />
-                        Ομαδικές Συνεδρίες
-                    </li>
+                    {servicesForMinors.map((service, index) => (
+                        <li key={index}>
+                            <Icons.CheckIcon />
+                            {service}
+                        </li>
+                    ))}
                 </ul>
             </div>
 

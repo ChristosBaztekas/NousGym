@@ -5,8 +5,9 @@ import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import * as Icons from "../../utils/icons.util"; // Import all icons
 // Images
-import BottomPattern from "../../assets/images/patterns/patternB.png";
+import BottomPattern from "@/assets/images/patterns/patternB.png";
 
+// Array of testimonials
 const testimonial = [
     {
         header: "Βαγγέλης Α.",
@@ -20,7 +21,7 @@ const testimonial = [
     },
     {
         header: "Δόμνα Σ.",
-        review: " Όταν ξεκίνησα συνεδρίες με τη ψυχολόγο του Nousgym, δεν ήξερα τι να περιμένω. Από την πρώτη στιγμή, όμως, κατάλαβα ότι είχα βρει τον σωστό επαγγελματία. Με υπομονή, κατανόηση και απίστευτη ενσυναίσθηση, με βοήθησε να αντιμετωπίσω φόβους που πίστευα πως θα με συνόδευαν για πάντα. Ειλικρινά, δεν έχω λόγια να εκφράσω την ευγνωμοσύνη μου!",
+        review: " Όταν ξεκίνησα συνεδρίες με τη ψυχολόγο του Nousgym, δεν ήξερα τι να περιμένω. Από την πρώτη στιγμή, όμως, κατάλαβα ότι είχα βρει τον σωστό επαγγελματία. Με υπομονή, κατανόηση και απίστευτη ενσυναίσθηση, με βοήθησε να αντιμετωπίσω φόβους που πίστευα πως θα με συνόδευαν για πάντα. Ειλικρινά, δεν έχω λόγια να εκφράσω την ευγνωμοσύνη μου!",
         color: "text-[#469BAF]"
     },
 ];

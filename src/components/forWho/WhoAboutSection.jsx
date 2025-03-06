@@ -1,9 +1,8 @@
-import NousLogo from "../../assets/Logo.png"; // Import the logo image
+import NousLogo from "@/assets/Logo.png"; // Import the logo image
 
 export const WhoAboutSection = () => {
     return (
         <main id="aboutVision">
-
             <div>
                 {/* Title And Description */}
                 <h2>Το Όραμά μας;</h2>

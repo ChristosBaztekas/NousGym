@@ -1,10 +1,10 @@
 import * as Icons from "../../utils/icons.util"; // Import all icons
 // Import Image
-import NousCourse from "../../assets/images/forHome/course.svg";
-import TopPattern from "../../assets/images/patterns/patternT.png"
-import BottomPattern from "../../assets/images/patterns/patternB.png"
-import FloatOPattern from "../../assets/images/patterns/floatingO.svg";
-import FloatBPattern from "../../assets/images/patterns/floatingB.svg";
+import NousCourse from "@/assets/images/forHome/course.svg";
+import TopPattern from "@/assets/images/patterns/patternT.png";
+import BottomPattern from "@/assets/images/patterns/patternB.png";
+import FloatOPattern from "@/assets/images/patterns/floatingO.svg";
+import FloatBPattern from "@/assets/images/patterns/floatingB.svg";
 
 export const CoursesSection = () => {
     return (
@@ -13,7 +13,7 @@ export const CoursesSection = () => {
             <img src={TopPattern} alt="Pattern" className="topPattern" />
             <img src={BottomPattern} alt="Pattern" className="bottomPattern" />
 
-            {/* side image */}
+            {/* Side image with floating patterns */}
             <span className="relative">
                 <img src={NousCourse} alt="NousGym Logo" width={435} height={483} />
                 <img className="absolute top-0 left-10 animate-pulse max-sm:w-14" src={FloatOPattern} width={80} height={80} alt="ToolKit Pattern" />

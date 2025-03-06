@@ -1,11 +1,27 @@
 import * as Icons from "../../utils/icons.util"; // Import all icons
 // Import images
-import TextPattern from "../../assets/images/patterns/textPattern.png";
+import TextPattern from "@/assets/images/patterns/textPattern.png";
+
+// List of services covered by the psychologists
+const services = [
+    "Άγχος",
+    "Κρίσεις Πανικού",
+    "Τραύμα",
+    "Κατάθλιψη",
+    "Ενδοοικογενειακή βία",
+    "Συμβουλευτική Ζεύγους",
+    "Αυτοτραυματισμός",
+    "Προβλήματα ύπνου",
+    "Δυσκολίες προσοχής και συγκέντρωσης",
+    "Ενδοσχολική βία και εκφοβισμός",
+    "Πένθος και απώλεια",
+    "Σεξουαλική κακοποίηση"
+];
 
 export const CoverSection = () => {
     return (
         <main id="cover">
-
+            {/* Section Title */}
             <h2> Οι Ψυχολόγοι μας καλύπτουν </h2>
             <h2>
                 κάθε ανάγκη σου!
@@ -16,65 +32,12 @@ export const CoverSection = () => {
             <div>
                 {/* List of services */}
                 <ul>
-                    <li>
-                        <Icons.CheckIcon />
-                        Άγχος
-                    </li>
-
-                    <li>
-                        <Icons.CheckIcon />
-                        Κρίσεις Πανικού
-                    </li>
-
-                    <li>
-                        <Icons.CheckIcon />
-                        Τραύμα
-                    </li>
-
-                    <li>
-                        <Icons.CheckIcon />
-                        Κατάθλιψη
-                    </li>
-
-                    <li>
-                        <Icons.CheckIcon />
-                        Ενδοοικογενειακή βία
-                    </li>
-
-                    <li>
-                        <Icons.CheckIcon />
-                        Συμβουλευτική Ζεύγους
-                    </li>
-
-                    <li>
-                        <Icons.CheckIcon />
-                        Αυτοτραυματισμός
-                    </li>
-
-                    <li>
-                        <Icons.CheckIcon />
-                        Προβλήματα ύπνου
-                    </li>
-
-                    <li>
-                        <Icons.CheckIcon />
-                        Δυσκολίες προσοχής και συγκέντρωσης
-                    </li>
-
-                    <li>
-                        <Icons.CheckIcon />
-                        Ενδοσχολική βία και εκφοβισμός
-                    </li>
-
-                    <li>
-                        <Icons.CheckIcon />
-                        Πένθος και απώλεια
-                    </li>
-
-                    <li>
-                        <Icons.CheckIcon />
-                        Σεξουαλική κακοποίηση
-                    </li>
+                    {services.map((service, index) => (
+                        <li key={index}>
+                            <Icons.CheckIcon />
+                            {service}
+                        </li>
+                    ))}
                 </ul>
             </div>
         </main>

@@ -1,13 +1,13 @@
+import { Link } from "react-router-dom";
 import { Header } from "../"; // Import the Header component
 import * as Icons from "../../utils/icons.util"; // Import all icons 
 // Import images
-import HeroPattern from "../../assets/images/patterns/patternB.png";
-import TextPattern from "../../assets/images/patterns/textPattern.png";
+import HeroPattern from "@/assets/images/patterns/patternB.png";
+import TextPattern from "@/assets/images/patterns/textPattern.png";
 
 export const HeroSection = () => {
     return (
         <main id="hero">
-            {/* Header component */}
             <Header />
 
             {/* Overlay for the hero section */}
@@ -33,12 +33,12 @@ export const HeroSection = () => {
                 <h3>Βρες τον ψυχολόγο που ταιριάζει στις ανάγκες σου και ξεκίνησε το ταξίδι σου προς την ψυχική ευεξία!</h3>
 
                 {/* Button with icon */}
-                <button className="group bg-[#469BAF] hover:bg-[#FF9245] mt-5">
+                <Link to="/who-we" className="group bg-[#469BAF] hover:bg-[#FF9245] mt-5">
                     Ποιοι είμαστε;
                     <span>
                         <Icons.ArrowIcon />
                     </span>
-                </button>
+                </Link>
             </section>
         </main>
     )

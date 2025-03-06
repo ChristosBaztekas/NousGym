@@ -1,7 +1,7 @@
-import * as Icons from "../../utils/icons.util" // Import all icons
+import { SmoothScrollButton } from "../"
 // Import images
-import TopPattern from "../../assets/images/patterns/patternT.png"
-import BottomPattern from "../../assets/images/patterns/patternB.png"
+import TopPattern from "@/assets/images/patterns/patternT.png"
+import BottomPattern from "@/assets/images/patterns/patternB.png"
 
 export const InvestSection = () => {
     return (
@@ -13,12 +13,9 @@ export const InvestSection = () => {
             <h3>Επένδυσε στην καλύτερη εκδοχή του εαυτού σου!</h3>
 
             {/* Button with icon */}
-            <button className="group bg-white hover:bg-gray-300 text-[#2B2C2E]">
+            <SmoothScrollButton href="#appointment" color="bg-white hover:bg-gray-300 text-[#2B2C2E]">
                 Ξεκίνα Τώρα!
-                <span>
-                    <Icons.ArrowIcon />
-                </span>
-            </button>
+            </SmoothScrollButton>
         </main>
     )
 }

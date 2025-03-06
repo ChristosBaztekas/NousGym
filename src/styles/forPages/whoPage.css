@@ -57,7 +57,7 @@
 /* Who Offer Section */
 
 #offer {
-    @apply relative text-left p-5 sm:p-10 py-10 sm:py-20 text-[#2B2C2E] bg-[#F1F1F1];
+    @apply relative text-left p-5 sm:p-10 xl:px-40 py-10 sm:py-20 text-[#2B2C2E] bg-[#F1F1F1];
 }
 
 #offer>h2 {
