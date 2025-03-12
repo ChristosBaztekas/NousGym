@@ -34,7 +34,7 @@ export const TestimonialSection = () => {
             <img src={BottomPattern} alt="Pattern" className="bottomPattern" />
 
             <section>
-                <p>TESTIMONIALS</p>
+                <p>Τι Λένε Για Εμάς</p>
 
                 <Swiper
                     modules={[Navigation, Autoplay, EffectFade]}

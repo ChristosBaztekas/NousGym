@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { SmoothScrollButton } from "../";
 import * as Icons from "../../utils/icons.util"; // Import all icons
 import NousLogo from "@/assets/Logo.png"; // Import the logo image
@@ -7,6 +7,7 @@ import NousLogo from "@/assets/Logo.png"; // Import the logo image
 export const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
+    const location = useLocation();
 
     // Function to toggle the mobile menu
     const toggleMenu = () => {
@@ -21,6 +22,10 @@ export const Header = () => {
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [location.pathname]);
 
     return (
         <>
@@ -39,7 +44,8 @@ export const Header = () => {
                         <NavLink to="/">Αρχική</NavLink>
                         <NavLink to="/who-we">Ποιοι Είμαστε</NavLink>
                         <NavLink to="/nous-gym">NousGym+</NavLink>
-                        <NavLink to="/ss">Επικοινωνία</NavLink>
+                        <NavLink to="/testimonials">Τι Λένε Για Εμάς</NavLink>
+                        <a href="#widget">Επικοινωνία</a>
                     </nav>
 
                     {/* Button with icon */}
@@ -56,7 +62,8 @@ export const Header = () => {
                 <NavLink to="/">Αρχική</NavLink>
                 <NavLink to="/who-we">Ποιοι Είμαστε</NavLink>
                 <NavLink to="/nous-gym">NousGym+</NavLink>
-                <NavLink to="/ss">Επικοινωνία</NavLink>
+                <NavLink to="/testimonials">Τι Λένε Για Εμάς</NavLink>
+                <a href="#widget">Επικοινωνία</a>
             </nav>
         </>
     );

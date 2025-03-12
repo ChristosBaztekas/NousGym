@@ -29,7 +29,7 @@
 }
 
 #hero section>h2 {
-    @apply text-2xl md:text-4xl lg:text-6xl mt-7 sm:mt-5 xl:leading-[70px];
+    @apply text-2xl md:text-4xl lg:text-6xl mt-7 sm:mt-5;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -345,9 +345,9 @@
 /* Widget Form Section */
 
 #widget {
-    @apply flex justify-center items-center
+    @apply flex justify-center items-center overflow-hidden;
 }
 
 #widget iframe {
-    @apply h-[790px] m-5 sm:m-10 lg:m-20;
+    @apply w-screen h-full my-5 sm:my-10 lg:my-20 border-none rounded-xs;
 }

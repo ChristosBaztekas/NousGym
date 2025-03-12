@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import * as Icons from "../../utils/icons.util"; // Import all icons
 import NousOnline from "@/assets/images/forHome/nousOnline.webp"; // Import the logo image
 
@@ -5,7 +6,7 @@ import NousOnline from "@/assets/images/forHome/nousOnline.webp"; // Import the 
 const services = [
 	"2 Ομαδικές συνεδρίες/μήνα (ΜΕ ΨΥΧΟΛΟΓΟ)",
 	"Επικοινωνία με επαγγελματίες Ψυχικής Υγείας",
-	"Εβδομαδιαίο Live",
+	"Συνεδρία Για Όλους: Live Q&A",
 	"Αποκλειστικό Περιεχόμενο",
 	"Ομαδικές ανάπτυξης"
 ];
@@ -17,7 +18,7 @@ export const OnlineSection = () => {
 				{/* Title And Description */}
 				<h2>Ψυχική Άσκηση Online</h2>
 				<p>
-					Το nousgym+ είναι το πρώτο γυμναστήριο ψυχικής και πνευματικής ενδυνάμωσης/άσκησης στην Ελλάδα. Εδώ, ψυχολόγοι και ειδικοί ψυχικής υγείας ενώνουν δυνάμεις, προσφέροντάς σου έναν χώρο όπου νους και ψυχή γυμνάζονται μαζί. Ουσιαστικά, όπως επιλέγεις ένα γυμναστήριο για να γυμνάσεις το σώμα σου, έτσι έχεις την επιλογή πλέον να κάνεις το ίδιο για τον εσωτερικό σου κόσμο. Τι περιλαμβάνει η μηνιαία συνδρομή:
+					Το NousGym+ είναι το πρώτο γυμναστήριο ψυχικής και πνευματικής ενδυνάμωσης/άσκησης στην Ελλάδα. Εδώ, ψυχολόγοι και ειδικοί ψυχικής υγείας ενώνουν δυνάμεις, προσφέροντάς σου έναν χώρο όπου νους και ψυχή γυμνάζονται μαζί. Ουσιαστικά, όπως επιλέγεις ένα γυμναστήριο για να γυμνάσεις το σώμα σου, έτσι έχεις την επιλογή πλέον να κάνεις το ίδιο για τον εσωτερικό σου κόσμο. Τι περιλαμβάνει η μηνιαία συνδρομή:
 				</p>
 
 				{/* List of services */}
@@ -31,12 +32,12 @@ export const OnlineSection = () => {
 				</ul>
 
 				{/* Button with icon */}
-				<button className="group bg-[#FF9245] hover:bg-[#469BAF] text-white">
+				<Link to="/nous-gym" className="group bg-[#FF9245] hover:bg-[#469BAF] text-white">
 					Περισσότερα
 					<span>
 						<Icons.ArrowIcon />
 					</span>
-				</button>
+				</Link>
 			</div>
 
 			{/* Logo image */}

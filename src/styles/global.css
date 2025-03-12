@@ -11,7 +11,7 @@
 }
 
 * {
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
@@ -127,7 +127,7 @@ footer a:hover {
 #hero>section>a,
 #process a,
 #why button,
-#online button,
+#online a,
 #courses button,
 #faq a,
 #description a,
@@ -141,7 +141,7 @@ footer a:hover {
 #hero>section>a>span,
 #process a>span,
 #why button>span,
-#online button>span,
+#online a>span,
 #courses button>span,
 #faq a>span,
 #description a>span,
@@ -155,7 +155,7 @@ footer a:hover {
 #hero>section>a svg,
 #process a svg,
 #why button svg,
-#online button svg,
+#online a svg,
 #courses button svg,
 #faq a svg,
 #description a svg,
