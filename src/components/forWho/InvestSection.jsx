@@ -1,4 +1,5 @@
 import { SmoothScrollButton } from "../"
+import * as Icons from '../../utils/icons.util'; // Import all icons
 // Import images
 import TopPattern from "@/assets/images/patterns/patternT.png"
 import BottomPattern from "@/assets/images/patterns/patternB.png"
@@ -15,6 +16,9 @@ export const InvestSection = () => {
             {/* Button with icon */}
             <SmoothScrollButton href="#appointment" color="bg-white hover:bg-gray-300 text-[#2B2C2E]">
                 Ξεκίνα Τώρα!
+                <span>
+                    <Icons.ArrowIcon />
+                </span>
             </SmoothScrollButton>
         </main>
     )

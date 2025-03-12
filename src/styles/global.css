@@ -59,15 +59,15 @@ header>div>nav:nth-child(1) .active {
     @apply text-[#FF9245];
 }
 
-header .group {
-    @apply relative flex justify-center items-center gap-6 font-medium bg-[#FF9245] hover:bg-[#469BAF] rounded-full px-3 xs:px-5 py-3 transition-all cursor-pointer;
+header>div>.group {
+    @apply relative flex justify-center items-center gap-6 font-medium bg-[#FF9245] hover:bg-[#469baf] rounded-full px-3 xs:px-5 py-3 transition-all cursor-pointer;
 }
 
-header .group>span {
+header>div>.group>span {
     @apply relative w-[17.5px] h-[17.5px] border-2 rounded-full;
 }
 
-header .group svg {
+header>div>.group svg {
     @apply absolute -left-[11px] group-hover:left-1 top-[2px] shrink-0 transition-all duration-200;
 }
 
@@ -147,7 +147,7 @@ footer a:hover {
 #description a>span,
 #invest a>span,
 #nous>section>a>span,
-#gym a>span,
+#gym a span,
 #become a>span {
     @apply relative w-[17.5px] h-[17.5px] border-2 rounded-full;
 }

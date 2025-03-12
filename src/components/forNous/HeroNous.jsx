@@ -1,4 +1,5 @@
 import { Header, SmoothScrollButton } from "../"; // Import the Header component
+import * as Icons from '../../utils/icons.util'; // Import all icons
 // Import images
 import FloatingPattern from "@/assets/images/forWho/floatingHero.png";
 
@@ -17,6 +18,9 @@ export const HeroNous = () => {
                 {/* Button with icon */}
                 <SmoothScrollButton href="#appointment" color="bg-[#469BAF] hover:bg-[#FF9245] mx-auto text-white">
                     Ξεκίνα Τώρα!
+                    <span>
+                        <Icons.ArrowIcon />
+                    </span>
                 </SmoothScrollButton>
             </section>
         </main>

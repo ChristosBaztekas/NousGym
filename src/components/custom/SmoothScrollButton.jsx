@@ -1,6 +1,5 @@
 import { useNavigate, useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import * as Icons from '../../utils/icons.util'; // Import all icons
 
 // Function to perform smooth scrolling
 const smoothScroll = (target, offset = 0) => {
@@ -63,9 +62,6 @@ export const SmoothScrollButton = ({ href, children, color }) => {
     return (
         <a href={href} onClick={handleClick} className={`${color} group`}>
             {children}
-            <span>
-                <Icons.ArrowIcon />
-            </span>
         </a>
     );
 };

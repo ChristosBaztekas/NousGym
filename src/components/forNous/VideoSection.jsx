@@ -1,15 +1,16 @@
 export const VideoSection = () => {
     return (
-        <main className="flex justify-center items-center">
-            {/* Video Section */}
-            <iframe
-                className="h-60 sm:h-[600px] m-5 lg:m-20"
-                width="100%" height="100%"
-                src="https://www.youtube.com/embed/qC0vDKVPCrw?autoplay=1&mute=1&controls=0&modestbranding=1"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-            ></iframe>
+        <main className="flex justify-center items-center p-5 lg:p-20">
+            {/* Container with aspect ratio 16:9 */}
+            <div className="w-full max-w-7xl aspect-video">
+                <iframe
+                    className="w-full h-full rounded-xl shadow-lg"
+                    src="https://www.youtube.com/embed/OKHHfJkdmnY?si=2VNjMio9U_YJXolM"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                ></iframe>
+            </div>
         </main>
-    )
-}
+    );
+};

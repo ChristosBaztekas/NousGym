@@ -44,13 +44,18 @@ export const Header = () => {
                         <NavLink to="/">Αρχική</NavLink>
                         <NavLink to="/who-we">Ποιοι Είμαστε</NavLink>
                         <NavLink to="/nous-gym">NousGym+</NavLink>
-                        <NavLink to="/testimonials">Τι Λένε Για Εμάς</NavLink>
+                        <SmoothScrollButton href="#testimonial">
+                            Τι Λένε Για Εμάς
+                        </SmoothScrollButton>
                         <a href="#widget">Επικοινωνία</a>
                     </nav>
 
                     {/* Button with icon */}
                     <SmoothScrollButton href="#appointment">
                         Βρες το Ψυχολόγο σου
+                        <span>
+                            <Icons.ArrowIcon />
+                        </span>
                     </SmoothScrollButton>
                 </div>
             </header>
@@ -62,7 +67,9 @@ export const Header = () => {
                 <NavLink to="/">Αρχική</NavLink>
                 <NavLink to="/who-we">Ποιοι Είμαστε</NavLink>
                 <NavLink to="/nous-gym">NousGym+</NavLink>
-                <NavLink to="/testimonials">Τι Λένε Για Εμάς</NavLink>
+                <SmoothScrollButton href="#testimonial">
+                    Τι Λένε Για Εμάς
+                </SmoothScrollButton>
                 <a href="#widget">Επικοινωνία</a>
             </nav>
         </>

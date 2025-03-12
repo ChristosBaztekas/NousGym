@@ -1,12 +1,12 @@
 import * as Icons from "../../utils/icons.util"; // Import all icons
 import NousOnline from "@/assets/images/forHome/nousOnline.webp"; // Import the logo image
-import { SmoothScrollButton } from "../custom/SmoothScrollButton";
 import TopPattern from "@/assets/images/patterns/patternT.png";
 import BottomPattern from "@/assets/images/patterns/patternB.png";
+import { Link } from 'react-router-dom';
 // List of services
 const services = [
     "Είναι μια πλατφόρμα ψυχικής & πνευματικής ενδυνάμωσης.",
-    "Συνδυάζει καθοδηγούμενες συνεδρίες, εργαλεία αυτοβελτίωσης & υποστηρικτική κοινότητα.",
+    "Συνδυάζει ομαδικές συνεδρίες με ψυχολόγους",
     "Προσφέρει λύσεις για άγχος, αυτοπεποίθηση, ψυχική ανθεκτικότητα και προσωπική εξέλιξη.",
 ];
 
@@ -20,7 +20,7 @@ export const GymPlusSection = () => {
 
             <div>
                 {/* Title And Description */}
-                <h2>Τι Είναι το NOUSGYM+</h2>
+                <h2>Τι Είναι το NousGym+</h2>
                 <p>
                     Το NOUSGYM+ είναι η πρώτη διαδικτυακή κοινότητα που σε βοηθά να γυμνάσεις τον νου σου, όπως ακριβώς φροντίζεις το σώμα σου.
                 </p>
@@ -36,15 +36,18 @@ export const GymPlusSection = () => {
                 </ul>
 
                 {/* Button with icon */}
-                <SmoothScrollButton href="#appointment" color="bg-[#FF9245] hover:bg-[#469BAF] text-white">
+                <Link to="https://nousgymplus.savvasgeorgiadis.com/" target="_blank" className="group bg-[#FF9245] hover:bg-[#469BAF] text-white">
                     Ξεκίνα Τώρα!
-                </SmoothScrollButton>
+                    <span>
+                        <Icons.ArrowIcon />
+                    </span>
+                </Link>
             </div>
 
             {/* Logo image */}
             <div>
                 <img src={NousOnline} alt="NousGym Logo" width={420} height={360} />
             </div>
-        </main>
+        </main >
     )
 }

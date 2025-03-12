@@ -136,3 +136,33 @@
 #benefit>a {
     @apply flex justify-center w-full max-w-[640px] mx-auto text-center gap-6 font-medium px-5 py-3 bg-[#FF9245] hover:bg-[#469BAF] text-white rounded-full transition-all
 }
+
+/* Pricing Section */
+
+#price {
+    @apply flex justify-center items-center overflow-hidden;
+}
+
+#price iframe {
+    @apply w-screen h-full m-5 sm:m-10 lg:m-20 border-none rounded-xs;
+}
+
+/* Float Button */
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}

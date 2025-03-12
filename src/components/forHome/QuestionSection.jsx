@@ -1,5 +1,6 @@
+import * as Icons from '../../utils/icons.util'; // Import all icons
 import { useState } from "react";
-import {SmoothScrollButton} from "../";
+import { SmoothScrollButton } from "../";
 
 // Array of questions and answers
 const questions = [
@@ -37,6 +38,9 @@ export const QuestionSection = () => {
                 {/* Button with icon */}
                 <SmoothScrollButton href="#appointment" color="bg-[#FF9245] hover:bg-[#469BAF] mt-5 text-white">
                     Βρες το Ψυχολόγο σου
+                    <span>
+                        <Icons.ArrowIcon />
+                    </span>
                 </SmoothScrollButton>
             </section>
 

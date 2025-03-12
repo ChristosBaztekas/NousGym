@@ -32,6 +32,7 @@ export * from "./forNous/GymPlusSection.jsx"
 export * from "./forNous/BecomeSection.jsx"
 export * from "./forNous/ExistSection.jsx"
 export * from "./forNous/BenefitsSection.jsx"
+export * from "./forNous/PricingSection.jsx"
 
 // Custom Components
 export * from "./custom/CheckBox.jsx"

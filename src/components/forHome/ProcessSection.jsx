@@ -1,4 +1,4 @@
-import {SmoothScrollButton} from "../"; // Import the SmoothScrollButton component
+import { SmoothScrollButton } from "../"; // Import the SmoothScrollButton component
 import * as Icons from "../../utils/icons.util"; // Import all icons
 // Import images
 import TopPattern from "@/assets/images/patterns/patternT.png";
@@ -48,6 +48,9 @@ export const ProcessSection = () => {
             {/* Button with icon */}
             <SmoothScrollButton href="#appointment" color="bg-[#FF9245] hover:bg-[#469BAF] mx-auto text-white">
                 Ξεκίνα Τώρα!
+                <span>
+                    <Icons.ArrowIcon />
+                </span>
             </SmoothScrollButton>
         </main>
     );
