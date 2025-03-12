@@ -15,7 +15,7 @@ export const BecomeSection = () => {
             <h3>Γίνε μέλος σήμερα και επένδυσε στην καλύτερη εκδοχή του εαυτού σου!</h3>
 
             {/* Button with icon */}
-            <Link to="https://nousgymplus.savvasgeorgiadis.com/" className="group bg-white hover:bg-gray-300 text-[#2B2C2E]">
+            <Link to="https://nousgymplus.savvasgeorgiadis.com/" target="_blank" className="group bg-white hover:bg-gray-300 text-[#2B2C2E]">
                 Ξεκίνα Τώρα!
                 <span>
                     <Icons.ArrowIcon />

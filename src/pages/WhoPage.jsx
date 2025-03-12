@@ -11,9 +11,9 @@ export const WhoPage = () => {
             <WhoOfferSection />
             <ChooseOurSection />
             <ForYouSection />
-            <QuestionSection />
-            <InvestSection />
             <TestimonialSection />
+            <InvestSection />
+            <QuestionSection />
             <WidgetSection />
             <Footer />
         </>

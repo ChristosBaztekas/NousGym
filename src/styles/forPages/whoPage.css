@@ -118,7 +118,7 @@
 }
 
 #choose>section {
-    @apply flex flex-col gap-5 text-left lg:max-w-[520px]
+    @apply flex flex-col gap-5 text-left lg:max-w-[550px]
 }
 
 #choose>section>h2 {

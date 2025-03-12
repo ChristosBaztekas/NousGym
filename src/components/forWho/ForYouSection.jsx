@@ -1,5 +1,5 @@
 // Import images
-import NousCourse from "@/assets/images/forHome/toolkit.svg";
+import ForU from "@/assets/images/forWho/for.webp";
 import TopPattern from "@/assets/images/patterns/patternT.png";
 import BottomPattern from "@/assets/images/patterns/patternB.png";
 import FloatOPattern from "@/assets/images/patterns/floatingO.svg";
@@ -24,14 +24,11 @@ export const ForYouSection = () => {
                 <p>
                     Οπότε είτε θέλεις να αντιμετωπίσεις μια συγκεκριμένη πρόκληση είτε να αναπτύξεις τις δεξιότητές σου, είμαστε εδώ για να σου προσφέρουμε τα κατάλληλα εργαλεία και την υποστήριξη που χρειάζεσαι.
                 </p>
-                <p>
-                    Κάθε συνεδρία προσαρμόζεται στις δικές σου ανάγκες, για να επιτευχθούν όλοι οι στόχοι που έχεις θέσει, φυσικά σε συνεργασία και με τον ψυχολόγο σου.
-                </p>
             </div>
 
             {/* Side image with floating patterns */}
             <span className="relative">
-                <img src={NousCourse} alt="NousGym Logo" width={435} height={483} />
+                <img src={ForU} alt="NousGym Logo" width={435} height={483} />
                 <img className="absolute top-0 left-10 animate-pulse max-sm:w-14" src={FloatOPattern} width={80} height={80} alt="ToolKit Pattern" />
                 <img className="absolute bottom-0 sm:bottom-10 right-10 animate-pulse max-sm:w-14" src={FloatBPattern} width={80} height={80} alt="ToolKit Pattern" />
             </span>
