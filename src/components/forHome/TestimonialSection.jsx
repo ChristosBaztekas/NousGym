@@ -3,6 +3,7 @@ import { Navigation, Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
+import PropTypes from 'prop-types';
 import * as Icons from "../../utils/icons.util"; // Import all icons
 // Images
 import BottomPattern from "@/assets/images/patterns/patternB.png";
@@ -26,9 +27,9 @@ const testimonial = [
     },
 ];
 
-export const TestimonialSection = () => {
+export const TestimonialSection = ({ background = "bg-white" }) => {
     return (
-        <main id="testimonial">
+        <main id="testimonial" className={background}>
             {/* Overlay Patterns for the process section */}
             <img src={BottomPattern} alt="Pattern" className="topPattern -rotate-180" />
             <img src={BottomPattern} alt="Pattern" className="bottomPattern" />
@@ -65,3 +66,8 @@ export const TestimonialSection = () => {
         </main>
     )
 }
+
+// Prop validation
+TestimonialSection.propTypes = {
+    background: PropTypes.string
+};

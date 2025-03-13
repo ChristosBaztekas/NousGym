@@ -22,8 +22,8 @@ export const ProcessSection = () => {
             <div>
                 <span>
                     <Icons.FormIcon />
-                    <h3>Φόρμα</h3>
-                    <p>Συμπληρώνεις τη φόρμα επικοινωνίας.</p>
+                    <h3>Δωρεάν Συνεδρία</h3>
+                    <p>Κλείνεις δωρεάν αναγνωριστική συνεδρία.</p>
                 </span>
 
                 {/* Line Divider */}

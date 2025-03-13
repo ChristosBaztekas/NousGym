@@ -15,7 +15,7 @@ export const HomePage = () => {
             <CoverSection />
             {/* <CoursesSection /> */}
             <QuestionSection />
-            <TestimonialSection />
+            <TestimonialSection background="bg-[#F1F1F1]" />
             <WidgetSection />
             <Footer />
         </>
