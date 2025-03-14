@@ -1,7 +1,7 @@
 export const PricingSection = () => {
     return (
         <main id="price">
-            IFRAME FOR PRICING
+            <iframe src="https://packages.nousgym.gr/packages-page"></iframe>
         </main>
     )
 }

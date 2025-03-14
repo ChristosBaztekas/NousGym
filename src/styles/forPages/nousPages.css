@@ -2,7 +2,6 @@
 
 @theme {
     --breakpoint-xs: 375px;
-    --breakpoint-lg: 1100px;
 }
 
 
@@ -144,7 +143,7 @@
 }
 
 #price iframe {
-    @apply w-screen h-full m-5 sm:m-10 lg:m-20 border-none rounded-xs;
+    @apply w-screen h-[2180px] sm:h-[1970px] md:h-[1100px] lg:h-[890px] m-5 sm:m-10 lg:m-20 border-none rounded-xs;
 }
 
 /* Float Button */
