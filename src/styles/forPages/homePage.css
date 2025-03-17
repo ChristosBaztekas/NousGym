@@ -53,11 +53,7 @@
 }
 
 #about>div>p:nth-child(1) {
-    @apply relative text-[#FF9245] font-medium w-fit pt-7 mb-2 z-20
-}
-
-#about>div>p>svg {
-    @apply absolute max-w-18 max-h-[83px] -left-4 -top-0 -z-10 text-[#0000000D]
+    @apply text-[#FF9245] font-medium w-fit pt-7 mb-2 z-20
 }
 
 #about h2 {

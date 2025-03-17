@@ -22,7 +22,7 @@ export const ExistSection = () => {
                 <span>
                     <Icons.MoneyIcon />
                     <Icons.CancelIcon />
-                    <p>Συμπληρώνεις τη φόρμα επικοινωνίας.</p>
+                    <p>Οι ατομικές συνεδρίες με ψυχολόγο είναι ακριβές.</p>
                 </span>
 
                 {/* Line Divider */}
