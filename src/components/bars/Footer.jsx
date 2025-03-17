@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import * as Icons from "../../utils/icons.util"; // Import all icons
 import { SmoothScrollButton } from "../custom/SmoothScrollButton";
+import * as Icons from "../../utils/icons.util"; // Import all icons
 
 export const Footer = () => {
     return (
@@ -76,7 +76,9 @@ export const Footer = () => {
                         <Icons.MailIcon />
                         <span className="text-sm">
                             Send Email{" "}
-                            <Link to="mailto:info@nousgym.gr" className="font-medium text-base">info@nousgym.gr</Link>
+                            <a href="mailto:info@nousgym.gr" className="font-medium text-base">
+                                info@nousgym.gr
+                            </a>
                         </span>
                     </span>
                 </div>

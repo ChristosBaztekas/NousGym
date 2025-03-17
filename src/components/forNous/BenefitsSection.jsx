@@ -1,4 +1,5 @@
 import React from "react";
+import useSmoothScroll from "@/utils/functions.util";
 import * as Icons from "../../utils/icons.util"; // Import all icons
 
 // List of Benefit covered by the psychologists
@@ -31,6 +32,7 @@ const Benefit = [
 ];
 
 export const BenefitsSection = () => {
+    useSmoothScroll();
     return (
         <main id="benefit">
             {/* Section Title */}
@@ -56,7 +58,7 @@ export const BenefitsSection = () => {
                 </ul>
             </div>
 
-            <a href="#price" className=" animate-float shadow-[0_0_25px_rgb(255,146,69)] hover:shadow-[0_0_40px_rgb(70,155,175)] transform hover:scale-105 transition-all duration-300 px-6 py-3 rounded-full font-semibold">
+            <a href="#price" className="animate-float shadow-[0_0_25px_rgb(255,146,69)] hover:shadow-[0_0_40px_rgb(70,155,175)] transform hover:scale-105 transition-all duration-300 px-6 py-3 rounded-full font-semibold">
                 Γίνε Συνδρομητής Τώρα!
             </a>
         </main>

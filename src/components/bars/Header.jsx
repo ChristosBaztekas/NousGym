@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { SmoothScrollButton } from "../";
+import useSmoothScroll from "@/utils/functions.util";
 import * as Icons from "../../utils/icons.util"; // Import all icons
 import NousLogo from "@/assets/Logo.png"; // Import the logo image
 
@@ -8,6 +9,7 @@ export const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
     const location = useLocation();
+    useSmoothScroll();
 
     // Function to toggle the mobile menu
     const toggleMenu = () => {

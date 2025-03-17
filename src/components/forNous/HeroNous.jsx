@@ -1,9 +1,11 @@
 import { Header } from "../"; // Import the Header component
+import useSmoothScroll from "@/utils/functions.util";
 import * as Icons from '../../utils/icons.util'; // Import all icons
 // Import images
 import FloatingPattern from "@/assets/images/forWho/floatingHero.png";
 
 export const HeroNous = () => {
+    useSmoothScroll();
     return (
         <main id="nous">
             <Header />

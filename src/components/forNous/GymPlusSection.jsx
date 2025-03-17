@@ -1,5 +1,7 @@
 import * as Icons from "../../utils/icons.util"; // Import all icons
-import NousOnline from "@/assets/images/forHome/nousOnline.webp"; // Import the logo image
+import useSmoothScroll from "@/utils/functions.util";
+// Import the logo image
+import NousOnline from "@/assets/images/forHome/nousOnline.webp";
 import TopPattern from "@/assets/images/patterns/patternT.png";
 import BottomPattern from "@/assets/images/patterns/patternB.png";
 
@@ -11,6 +13,7 @@ const services = [
 ];
 
 export const GymPlusSection = () => {
+    useSmoothScroll();
     return (
         <main id="gym">
 

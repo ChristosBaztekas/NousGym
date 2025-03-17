@@ -1,10 +1,12 @@
 import * as Icons from "../../utils/icons.util"; // Import all icons
+import useSmoothScroll from "@/utils/functions.util";
 // Import images
 import TopPattern from "@/assets/images/patterns/patternT.png"
 import BottomPattern from "@/assets/images/patterns/patternB.png"
 
 
 export const BecomeSection = () => {
+    useSmoothScroll();
     return (
         <main id="become">
             {/* Overlay Patterns for the process section */}
