@@ -1,6 +1,5 @@
 import React from "react";
 import * as Icons from "../../utils/icons.util"; // Import all icons
-import { Link } from "react-router-dom";
 
 // List of Benefit covered by the psychologists
 const Benefit = [
@@ -11,12 +10,12 @@ const Benefit = [
     },
     {
         check: "Επικοινωνία με Ψυχολόγους",
-        disc: "Αμεση επικοινωνια με ειδικους ψυχικης υγειας μέσα απο τα κανάλια μας",
+        disc: "Αμεση επικοινωνια με ειδικούς ψυχικής υγείας μέσα απο τα κανάλια μας",
         icon: "Beni2Icon"
     },
     {
         check: "Συνεδρία Για Όλους: Live Q&A",
-        disc: "Kανε τις ερωτήσεις σου στο εβδομαδιαίο live q&a και λαβε απαντησεις απο ειδικούς σε πραγματικό χρόνο",
+        disc: "Kάνε τις ερωτήσεις σου στο εβδομαδιαίο live q&a και λάβε απαντήσεις απο ειδικούς σε πραγματικό χρόνο",
         icon: "Beni3Icon"
     },
     {
@@ -57,12 +56,9 @@ export const BenefitsSection = () => {
                 </ul>
             </div>
 
-            <Link
-                to="https://nousgymplus.savvasgeorgiadis.com/"
-                target="_parent"
-                className=" animate-float shadow-[0_0_25px_rgb(255,146,69)] hover:shadow-[0_0_40px_rgb(70,155,175)] transform hover:scale-105 transition-all duration-300 px-6 py-3 rounded-full font-semibold">
+            <a href="#price" className=" animate-float shadow-[0_0_25px_rgb(255,146,69)] hover:shadow-[0_0_40px_rgb(70,155,175)] transform hover:scale-105 transition-all duration-300 px-6 py-3 rounded-full font-semibold">
                 Γίνε Συνδρομητής Τώρα!
-            </Link>
+            </a>
         </main>
     )
 }

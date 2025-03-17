@@ -129,7 +129,7 @@ footer>nav {
 }
 
 footer>nav>div>p {
-    @apply text-2xl text-[#469BAF] mb-5;
+    @apply text-xl xs:text-2xl text-[#469BAF] mb-5;
 }
 
 footer>nav>div>ul {

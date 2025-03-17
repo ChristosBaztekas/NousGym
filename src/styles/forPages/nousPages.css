@@ -46,7 +46,7 @@
 }
 
 #gym li>svg {
-    @apply text-[#FF9245]
+    @apply text-[#FF9245] shrink-0
 }
 
 

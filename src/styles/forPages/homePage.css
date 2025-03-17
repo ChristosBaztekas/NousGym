@@ -69,7 +69,7 @@
 }
 
 #about ul {
-    @apply flex flex-col sm:flex-row gap-5 justify-between font-semibold sm:font-bold
+    @apply grid grid-cols-1 sm:grid-cols-2 gap-5 font-semibold sm:font-bold;
 }
 
 #about li {
@@ -77,7 +77,7 @@
 }
 
 #about li>svg {
-    @apply text-[#FF9245]
+    @apply text-[#FF9245] shrink-0
 }
 
 /* Process Section */
@@ -196,7 +196,7 @@
 }
 
 #online li>svg {
-    @apply text-[#FF9245]
+    @apply text-[#FF9245] shrink-0
 }
 
 
@@ -228,8 +228,8 @@
     @apply relative text-center text-xl xs:text-2xl sm:text-4xl md:text-5xl lg:text-[56px] w-fit mx-auto font-medium;
 }
 
-#cover img {
-    @apply w-14 sm:w-30 mr-auto max-sm:h-0.5;
+#cover>h2:nth-child(2) img {
+    @apply w-14 sm:w-30 mr-auto max-sm:h-0.5 h-1;
 }
 
 #cover>div {

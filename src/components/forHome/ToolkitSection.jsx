@@ -113,7 +113,7 @@ export const ToolkitSection = () => {
 
                         {/* Submit button */}
                         <button type="submit" disabled={loading}>
-                            {loading ? "Sending..." : "Sign Up"}
+                            {loading ? "Sending..." : "Τη Θέλω"}
                         </button>
                     </div>
                 </form>
@@ -127,7 +127,7 @@ export const ToolkitSection = () => {
                     checked={isChecked}
                     onChange={(e) => setIsChecked(e.target.checked)}
                 >
-                    Συμπληρώνοντας τη φόρμα αποδέχομαι να λαμβάνω email.
+                    Συμπληρώνοντας τη φόρμα αποδέχομαι να λαμβάνω email από το NousGym και την εταιρία ΚΕΝΤΡΟ ΣΥΜΒΟΥΛΕΥΤΙΚΗΣ & ΨΥΧΟΘΕΡΑΠΕΙΑΣ Σ. ΓΕΩΡΓΙΑΔΗΣ & ΣΙΑ ΕΕ
                 </CheckBox>
             </section>
 

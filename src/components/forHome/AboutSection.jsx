@@ -2,14 +2,13 @@ import * as Icons from "../../utils/icons.util"; // Import all icons
 import NousLogo from "@/assets/Logo.png"; // Import the logo image
 
 // List of services provided by NousGym
-const servicesForAdults = [
+const services = [
     "Για Ενήλικες",
-    "Ατομικές Συνεδρίες"
-];
-
-const servicesForMinors = [
+    "Ατομικές Συνεδρίες",
     "Για Ανήλικους",
-    "Ομαδικές Συνεδρίες"
+    "Ομαδικές Συνεδρίες",
+    "Συμβουλευτική Ζεύγους",
+    "Συμβουλευτική Οικογένειας"
 ];
 
 export const AboutSection = () => {
@@ -34,17 +33,7 @@ export const AboutSection = () => {
 
                 {/* List of services for adults */}
                 <ul>
-                    {servicesForAdults.map((service, index) => (
-                        <li key={index}>
-                            <Icons.CheckIcon />
-                            {service}
-                        </li>
-                    ))}
-                </ul>
-
-                {/* List of services for minors */}
-                <ul>
-                    {servicesForMinors.map((service, index) => (
+                    {services.map((service, index) => (
                         <li key={index}>
                             <Icons.CheckIcon />
                             {service}

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import * as Icons from "../../utils/icons.util"; // Import all icons
 // Import images
 import TopPattern from "@/assets/images/patterns/patternT.png"
@@ -15,12 +14,12 @@ export const BecomeSection = () => {
             <h3>Γίνε μέλος σήμερα και επένδυσε στην καλύτερη εκδοχή του εαυτού σου!</h3>
 
             {/* Button with icon */}
-            <Link to="https://nousgymplus.savvasgeorgiadis.com/" target="_blank" className="group bg-white hover:bg-gray-300 text-[#2B2C2E]">
+            <a href="#price" className="group bg-white hover:bg-gray-300 text-[#2B2C2E]">
                 Ξεκίνα Τώρα!
                 <span>
                     <Icons.ArrowIcon />
                 </span>
-            </Link>
+            </a>
         </main>
     )
 }
