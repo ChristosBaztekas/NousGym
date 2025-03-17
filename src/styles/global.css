@@ -109,10 +109,46 @@ header>div>.group svg {
 /* Footer Style */
 
 footer {
-    @apply flex justify-center items-center gap-2 sm:gap-3 text-white bg-[#469BAF] font-medium p-3;
+    @apply flex flex-col justify-center items-center gap-2 bg-[#F1F1F1];
 }
 
-footer a {
+footer>div:first-of-type {
+    @apply flex justify-center items-center gap-5 text-white bg-[#FF9245] font-medium p-9 w-full;
+}
+
+footer>div:first-of-type>span {
+    @apply flex items-center gap-2.5 text-[#2E2626];
+}
+
+footer>div>span a {
+    @apply flex justify-center items-center gap-2 text-[#2E2626];
+}
+
+footer>nav {
+    @apply flex justify-center gap-5 xs:gap-9 text-[#2B2C2E] my-10 sm:my-20;
+}
+
+footer>nav>div>p {
+    @apply text-2xl text-[#469BAF] mb-5;
+}
+
+footer>nav>div>ul {
+    @apply flex flex-col gap-3.5;
+}
+
+footer>nav>div:last-of-type>span {
+    @apply flex items-center gap-5;
+}
+
+footer>nav>div:last-of-type>span span {
+    @apply flex flex-col;
+}
+
+footer>div:last-of-type {
+    @apply flex justify-center items-center gap-2 sm:gap-3 font-medium p-3 text-[#469BAF];
+}
+
+footer>div:last-of-type>a {
     @apply underline max-sm:text-sm;
 }
 
