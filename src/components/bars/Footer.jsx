@@ -17,7 +17,7 @@ export const Footer = () => {
                         <Icons.FacebookIcon />
                     </Link>
                     <Link
-                        to="https://www.linkedin.com/"
+                        to="https://www.linkedin.com/company/nousgym/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -31,7 +31,7 @@ export const Footer = () => {
                         <Icons.TiktokIcon />
                     </Link>
                     <Link
-                        to="https://www.instagram.com/nousgymgr?igsh=MThqNnh0ZHM5YnE5&utm_source=qr"
+                        to="https://www.instagram.com/nousgym.gr?igsh=MThqNnh0ZHM5YnE5&utm_source=qr"
                         target="_blank"
                         rel="noopener noreferrer"
                     >

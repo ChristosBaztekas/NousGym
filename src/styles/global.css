@@ -198,5 +198,5 @@ footer a:hover {
 #nous>section>a svg,
 #gym a svg,
 #become a svg {
-    @apply absolute -left-[11px] group-hover:left-1 top-[2px] shrink-0 transition-all duration-200;
+    @apply absolute -left-[11px] group-hover:left-1 top-1/2 -translate-y-[50%] shrink-0 transition-all duration-200;
 }
