@@ -52,10 +52,6 @@
     @apply flex flex-col lg:flex-row justify-center items-center lg:items-start xl:gap-16 mx-5 sm:mx-10 my-10 sm:my-20 lg:m-20 text-[#2B2C2E]
 }
 
-#about>div>p:nth-child(1) {
-    @apply text-[#FF9245] font-medium w-fit pt-7 mb-2 z-20
-}
-
 #about h2 {
     @apply text-3xl sm:text-4xl lg:text-5xl font-medium
 }
