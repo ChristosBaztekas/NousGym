@@ -5,7 +5,11 @@ export const PricingSection = () => {
         const handleMessage = (event) => {
             const iframe = document.getElementById("pricingIframe");
             if (iframe && !isNaN(event.data)) {
-                iframe.style.height = `${event.data + 40}px`;
+                if (window.innerWidth < 500) {
+                    iframe.style.height = `${event.data + 90}px`;
+                } else {
+                    iframe.style.height = `${event.data + 40}px`;
+                }
             }
         };
 
