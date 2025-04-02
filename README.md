@@ -1,6 +1,5 @@
 # NousGym
 
-
 ## Quick Preview
 
  <table align="center">
