@@ -4,12 +4,8 @@ export const PricingSection = () => {
     useEffect(() => {
         const handleMessage = (event) => {
             const iframe = document.getElementById("pricingIframe");
-            if (iframe && !isNaN(event.data)) {
-                if (window.innerWidth < 500) {
-                    iframe.style.height = `${event.data + 90}px`;
-                } else {
-                    iframe.style.height = `${event.data + 40}px`;
-                }
+            if (iframe && event.data.height && !isNaN(event.data.height)) {
+                iframe.style.height = `${event.data.height + (window.innerWidth < 500 ? 90 : 40)}px`;
             }
         };
 
