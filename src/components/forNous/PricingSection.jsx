@@ -26,7 +26,7 @@ export const PricingSection = () => {
                 const averageHeight = validHeights.reduce((sum, h) => sum + h, 0) / validHeights.length;
 
                 // Determine the buffer based on screen width
-                const buffer = window.innerWidth < 500 ? 180 : 60;
+                const buffer = window.innerWidth < 500 ? 210 : 60;
 
                 // Apply the calculated height
                 const newHeight = Math.round(averageHeight) + buffer;
