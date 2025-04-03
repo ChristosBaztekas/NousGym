@@ -6,6 +6,7 @@ export const PricingSection = () => {
     useEffect(() => {
         const handleMessage = (event) => {
             const iframe = document.getElementById("pricingIframe");
+          
             if (iframe && !isNaN(event.data.height)) {
                 const maxHeight = 10000; // Maximum allowed height
                 const minHeight = 4000; // Minimum allowed height
