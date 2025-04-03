@@ -138,9 +138,6 @@
 
 /* Pricing Section */
 
-#price {
-    @apply flex justify-center items-center overflow-hidden;
-}
 
 #price iframe {
     @apply w-screen mx-5 sm:mx-10 lg:mx-20 mt-5 border-none rounded-xs;
@@ -169,6 +166,7 @@
         height: 8400px !important;
     }
 }
+
 
 /* Float Button */
 
