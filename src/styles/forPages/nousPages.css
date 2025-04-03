@@ -143,7 +143,7 @@
 }
 
 #price iframe {
-    @apply w-screen m-5 sm:m-10 lg:m-20 border-none rounded-xs;
+    @apply w-screen mx-5 sm:mx-10 lg:mx-20 mt-5 border-none rounded-xs;
 }
 
 /* Float Button */
