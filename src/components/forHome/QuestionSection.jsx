@@ -37,7 +37,7 @@ export const QuestionSection = () => {
                 <h2>Συχνές Ερωτήσεις</h2>
                 {/* Button with icon */}
                 <SmoothScrollButton href="#appointment" color="bg-[#FF9245] hover:bg-[#469BAF] mt-5 text-white">
-                    Βρες το Ψυχολόγο σου
+                    Βρες τον Ψυχολόγο σου
                     <span>
                         <Icons.ArrowIcon />
                     </span>

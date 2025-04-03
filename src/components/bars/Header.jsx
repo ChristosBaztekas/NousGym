@@ -54,7 +54,7 @@ export const Header = () => {
 
                     {/* Button with icon */}
                     <SmoothScrollButton href="#appointment">
-                        Βρες το Ψυχολόγο σου
+                        Βρες τον Ψυχολόγο σου
                         <span>
                             <Icons.ArrowIcon />
                         </span>

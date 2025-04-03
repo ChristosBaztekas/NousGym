@@ -18,7 +18,7 @@ export const HeroSection = () => {
 
             <section>
                 {/* Main heading */}
-                <h1><span>Βρες το </span><span>Ψυχολόγο</span><span> σου!</span></h1>
+                <h1><span>Βρες τον </span><span>Ψυχολόγο</span><span> σου!</span></h1>
 
                 {/* Subheading */}
                 <h2>Μια σχέση εμπιστοσύνης
