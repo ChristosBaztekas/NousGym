@@ -146,6 +146,30 @@
     @apply w-screen mx-5 sm:mx-10 lg:mx-20 mt-5 border-none rounded-xs;
 }
 
+@media (max-width: 360px) {
+    #pricingIframe {
+        height: 9500px !important;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 400px) {
+    #pricingIframe {
+        height: 9350px !important;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 500px) {
+    #pricingIframe {
+        height: 8900px !important;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 840px) {
+    #pricingIframe {
+        height: 8400px !important;
+    }
+}
+
 /* Float Button */
 
 @keyframes float {
